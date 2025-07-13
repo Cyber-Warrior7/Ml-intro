@@ -1,0 +1,2030 @@
+<html>
+
+<head>
+    <meta name="color-scheme" content="light dark">
+    <meta charset="UTF-8">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown-dark.min.css"
+        id="_theme">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" id="_prism">
+</head>
+
+<body class="_theme-github-dark _color-dark">
+    <div id="_html" class="markdown-body" style="visibility: visible;">
+        <h2 id="-bhramastra-notes--day-1-to-day-10" tabindex="-1"><a class="anchor"
+                name="-bhramastra-notes--day-1-to-day-10" tabindex="-1" href="#-bhramastra-notes--day-1-to-day-10"><span
+                    class="octicon octicon-link"></span></a>🧠 Bhramastra Notes — Day 1 to Day 10</h2>
+        <hr>
+        <h3 id="-day-1-what-is-machine-learning" tabindex="-1"><a class="anchor" name="-day-1-what-is-machine-learning"
+                tabindex="-1" href="#-day-1-what-is-machine-learning"><span class="octicon octicon-link"></span></a>✅
+            <strong>Day 1: What is Machine Learning?</strong>
+        </h3>
+        <p><strong>📌 Definition</strong>:
+            Machine Learning is a subset of AI that enables systems to learn from data without being explicitly
+            programmed.</p>
+        <p><strong>🧠 Core Idea</strong>:</p>
+        <ul>
+            <li>Program + Data → Model → Predictions</li>
+            <li>ML ≠ Traditional programming</li>
+        </ul>
+        <p><strong>⚙️ Components</strong>:</p>
+        <ul>
+            <li><strong>Data</strong> (features + labels)</li>
+            <li><strong>Model</strong> (algorithm that learns from data)</li>
+            <li><strong>Learning</strong> (process of optimizing model)</li>
+        </ul>
+        <hr>
+        <h3 id="-day-2-ai-vs-ml-vs-dl" tabindex="-1"><a class="anchor" name="-day-2-ai-vs-ml-vs-dl" tabindex="-1"
+                href="#-day-2-ai-vs-ml-vs-dl"><span class="octicon octicon-link"></span></a>✅ <strong>Day 2: AI vs ML vs
+                DL</strong></h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>AI</th>
+                    <th>ML</th>
+                    <th>DL</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Scope</td>
+                    <td>Broad</td>
+                    <td>Subset of AI</td>
+                    <td>Subset of ML</td>
+                </tr>
+                <tr>
+                    <td>Input</td>
+                    <td>Human-like logic</td>
+                    <td>Data</td>
+                    <td>Large data</td>
+                </tr>
+                <tr>
+                    <td>Examples</td>
+                    <td>Expert systems</td>
+                    <td>Linear Regression, SVM</td>
+                    <td>CNNs, RNNs</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><strong>🧠 Key Point</strong>:
+            DL uses neural networks (multi-layered), while ML uses both statistical and probabilistic models.</p>
+        <hr>
+        <h3 id="-day-3-types-of-machine-learning" tabindex="-1"><a class="anchor"
+                name="-day-3-types-of-machine-learning" tabindex="-1" href="#-day-3-types-of-machine-learning"><span
+                    class="octicon octicon-link"></span></a>✅ <strong>Day 3: Types of Machine Learning</strong></h3>
+        <ol>
+            <li>
+                <p><strong>Supervised Learning</strong></p>
+                <ul>
+                    <li>Labeled data (input → output)</li>
+                    <li>Examples: Linear Regression, Classification</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Unsupervised Learning</strong></p>
+                <ul>
+                    <li>No labels (find structure)</li>
+                    <li>Examples: Clustering, Dimensionality Reduction</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Reinforcement Learning</strong></p>
+                <ul>
+                    <li>Agent learns by interacting with environment</li>
+                    <li>Examples: AlphaGo, Self-driving cars</li>
+                </ul>
+            </li>
+        </ol>
+        <hr>
+        <h3 id="-day-4-batch-vs-online-learning" tabindex="-1"><a class="anchor" name="-day-4-batch-vs-online-learning"
+                tabindex="-1" href="#-day-4-batch-vs-online-learning"><span class="octicon octicon-link"></span></a>✅
+            <strong>Day 4: Batch vs Online Learning</strong>
+        </h3>
+        <p><strong>📦 Batch (Offline) Learning</strong>:</p>
+        <ul>
+            <li>Trains on entire dataset</li>
+            <li>Slower updates, good for stable systems</li>
+        </ul>
+        <p><strong>🌐 Online Learning</strong>:</p>
+        <ul>
+            <li>Learns incrementally (one sample at a time)</li>
+            <li>Best for real-time data or streaming</li>
+        </ul>
+        <table>
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Memory</th>
+                    <th>Speed</th>
+                    <th>Use Case</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Batch</td>
+                    <td>High</td>
+                    <td>Slow</td>
+                    <td>Static systems</td>
+                </tr>
+                <tr>
+                    <td>Online</td>
+                    <td>Low</td>
+                    <td>Fast</td>
+                    <td>Real-time systems</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h3 id="-day-5-online-learning-continued" tabindex="-1"><a class="anchor"
+                name="-day-5-online-learning-continued" tabindex="-1" href="#-day-5-online-learning-continued"><span
+                    class="octicon octicon-link"></span></a>✅ <strong>Day 5: Online Learning Continued</strong></h3>
+        <ul>
+            <li><strong>Concept Drift</strong>: When data distribution changes over time (e.g., spam filters)</li>
+            <li><strong>Out-of-core learning</strong>: Learning from data that doesn’t fit in memory</li>
+            <li><strong>Learning Rate</strong>: Controls step size in learning</li>
+        </ul>
+        <p><strong>⚠️ Risk</strong>: Online models can be unstable if learning rate is too high.</p>
+        <hr>
+        <h3 id="-day-6-instance-based-vs-model-based-learning" tabindex="-1"><a class="anchor"
+                name="-day-6-instance-based-vs-model-based-learning" tabindex="-1"
+                href="#-day-6-instance-based-vs-model-based-learning"><span class="octicon octicon-link"></span></a>✅
+            <strong>Day 6: Instance-Based vs Model-Based Learning</strong>
+        </h3>
+        <p><strong>📌 Instance-Based</strong>:</p>
+        <ul>
+            <li>Memorizes training examples (lazy learning)</li>
+            <li>Example: K-Nearest Neighbors</li>
+        </ul>
+        <p><strong>📌 Model-Based</strong>:</p>
+        <ul>
+            <li>Learns a mathematical model (generalizes)</li>
+            <li>Example: Linear Regression, Decision Trees</li>
+        </ul>
+        <table>
+            <thead>
+                <tr>
+                    <th>Aspect</th>
+                    <th>Instance-Based</th>
+                    <th>Model-Based</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Learning Time</td>
+                    <td>Low</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td>Prediction Time</td>
+                    <td>High</td>
+                    <td>Fast</td>
+                </tr>
+                <tr>
+                    <td>Accuracy</td>
+                    <td>Local</td>
+                    <td>Global</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h3 id="-day-7-challenges-in-ml" tabindex="-1"><a class="anchor" name="-day-7-challenges-in-ml" tabindex="-1"
+                href="#-day-7-challenges-in-ml"><span class="octicon octicon-link"></span></a>✅ <strong>Day 7:
+                Challenges in ML</strong></h3>
+        <ol>
+            <li><strong>Insufficient Data</strong></li>
+            <li><strong>Poor Quality Data</strong></li>
+            <li><strong>Non-representative Data</strong></li>
+            <li><strong>Irrelevant Features</strong></li>
+            <li><strong>Overfitting / Underfitting</strong></li>
+            <li><strong>Data Leakage</strong></li>
+            <li><strong>Software Integration</strong></li>
+            <li><strong>Deployment Complexity</strong></li>
+        </ol>
+        <hr>
+        <h3 id="-day-8-applications-of-ml" tabindex="-1"><a class="anchor" name="-day-8-applications-of-ml"
+                tabindex="-1" href="#-day-8-applications-of-ml"><span class="octicon octicon-link"></span></a>✅
+            <strong>Day 8: Applications of ML</strong>
+        </h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Domain</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Retail</td>
+                    <td>Amazon recommendations</td>
+                </tr>
+                <tr>
+                    <td>Banking</td>
+                    <td>Fraud detection</td>
+                </tr>
+                <tr>
+                    <td>Healthcare</td>
+                    <td>Disease prediction</td>
+                </tr>
+                <tr>
+                    <td>Transportation</td>
+                    <td>Demand prediction (OLA/Uber)</td>
+                </tr>
+                <tr>
+                    <td>Manufacturing</td>
+                    <td>Predictive maintenance (Tesla)</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h3 id="-day-9-ml-development-life-cycle-mldlc" tabindex="-1"><a class="anchor"
+                name="-day-9-ml-development-life-cycle-mldlc" tabindex="-1"
+                href="#-day-9-ml-development-life-cycle-mldlc"><span class="octicon octicon-link"></span></a>✅
+            <strong>Day 9: ML Development Life Cycle (MLDLC)</strong>
+        </h3>
+        <p><strong>Stages</strong>:</p>
+        <ol>
+            <li>Frame the Problem</li>
+            <li>Gather Data</li>
+            <li>Data Preprocessing</li>
+            <li>Exploratory Data Analysis (EDA)</li>
+            <li>Feature Engineering &amp; Selection</li>
+            <li>Model Training &amp; Evaluation</li>
+            <li>Deployment</li>
+            <li>Monitoring &amp; Testing</li>
+        </ol>
+        <p><strong>🔁 It's an iterative process.</strong></p>
+        <hr>
+        <h3 id="-day-10-data-engineer-vs-analyst-vs-scientist-vs-ml-engineer" tabindex="-1"><a class="anchor"
+                name="-day-10-data-engineer-vs-analyst-vs-scientist-vs-ml-engineer" tabindex="-1"
+                href="#-day-10-data-engineer-vs-analyst-vs-scientist-vs-ml-engineer"><span
+                    class="octicon octicon-link"></span></a>✅ <strong>Day 10: Data Engineer vs Analyst vs Scientist vs
+                ML Engineer</strong></h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Role</th>
+                    <th>Focus</th>
+                    <th>Key Skills</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Data Engineer</strong></td>
+                    <td>Data pipelines, databases</td>
+                    <td>SQL, Big Data tools (Hadoop, Spark), AWS</td>
+                </tr>
+                <tr>
+                    <td><strong>Data Analyst</strong></td>
+                    <td>Reports, dashboards</td>
+                    <td>Excel, SQL, Python (pandas), visualization</td>
+                </tr>
+                <tr>
+                    <td><strong>Data Scientist</strong></td>
+                    <td>Predictive modeling</td>
+                    <td>Python, ML, statistics, storytelling</td>
+                </tr>
+                <tr>
+                    <td><strong>ML Engineer</strong></td>
+                    <td>Production ML systems</td>
+                    <td>ML + Software Engineering + Deployment</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><strong>🧠 Key Insight</strong>:</p>
+        <ul>
+            <li><em>ML Engineers</em> deploy and maintain models.</li>
+            <li><em>Data Scientists</em> experiment and analyze.</li>
+            <li><em>Engineers</em> ensure models run reliably.</li>
+        </ul>
+        <hr>
+        <h3 id="-bonus-tip" tabindex="-1"><a class="anchor" name="-bonus-tip" tabindex="-1" href="#-bonus-tip"><span
+                    class="octicon octicon-link"></span></a>📌 Bonus Tip:</h3>
+        <blockquote>
+            <p>Don’t memorize — <em>understand the flow.</em> These early days are about setting the foundation.</p>
+        </blockquote>
+        <hr>
+        <h2 id="-bhramastra-notes--day-11-to-day-15" tabindex="-1"><a class="anchor"
+                name="-bhramastra-notes--day-11-to-day-15" tabindex="-1"
+                href="#-bhramastra-notes--day-11-to-day-15"><span class="octicon octicon-link"></span></a>🧠 Bhramastra
+            Notes — Day 11 to Day 15</h2>
+        <hr>
+        <h3 id="-day-11-what-are-tensors" tabindex="-1"><a class="anchor" name="-day-11-what-are-tensors" tabindex="-1"
+                href="#-day-11-what-are-tensors"><span class="octicon octicon-link"></span></a>✅ <strong>Day 11: What
+                Are Tensors?</strong></h3>
+        <p><strong>📌 Definition</strong>:
+            A <strong>tensor</strong> is a multi-dimensional array — the core data structure in ML &amp; DL.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tensor</th>
+                    <th>Shape</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Scalar</td>
+                    <td>0D</td>
+                    <td><code>x = 5</code></td>
+                </tr>
+                <tr>
+                    <td>Vector</td>
+                    <td>1D</td>
+                    <td><code>[1, 2, 3]</code></td>
+                </tr>
+                <tr>
+                    <td>Matrix</td>
+                    <td>2D</td>
+                    <td><code>[[1, 2], [3, 4]]</code></td>
+                </tr>
+                <tr>
+                    <td>3D Tensor</td>
+                    <td>(2, 2, 2)</td>
+                    <td>Data over time/images</td>
+                </tr>
+                <tr>
+                    <td>4D</td>
+                    <td>Images in DL models</td>
+                    <td>CNNs</td>
+                </tr>
+                <tr>
+                    <td>5D</td>
+                    <td>videos in DL models</td>
+                    <td>CNNs</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><strong>🔎 Concepts</strong>:</p>
+        <ul>
+            <li><strong>Rank</strong> = Number of dimensions (axes)</li>
+            <li><strong>Shape</strong> = Tuple of dimensions (e.g., <code>(3, 2)</code>)</li>
+        </ul>
+        <hr>
+        <h3 id="-day-12-installing-tools--anaconda-jupyter-colab" tabindex="-1"><a class="anchor"
+                name="-day-12-installing-tools--anaconda-jupyter-colab" tabindex="-1"
+                href="#-day-12-installing-tools--anaconda-jupyter-colab"><span class="octicon octicon-link"></span></a>✅
+            <strong>Day 12: Installing Tools — Anaconda, Jupyter, Colab</strong>
+        </h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tool</th>
+                    <th>Use</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Anaconda</strong></td>
+                    <td>Local ML environment with Python + Jupyter</td>
+                </tr>
+                <tr>
+                    <td><strong>Jupyter Notebook</strong></td>
+                    <td>Browser-based code+text notebook</td>
+                </tr>
+                <tr>
+                    <td><strong>Google Colab</strong></td>
+                    <td>Online Jupyter + free GPU</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><strong>🛠️ Setup Tips</strong>:</p>
+        <ul>
+            <li>Use <code>conda create -n ml_env python=3.9</code> to create a new env</li>
+            <li>Use <strong>Google Colab</strong> if no GPU or RAM locally</li>
+        </ul>
+        <hr>
+        <h3 id="-day-13-end-to-end-ml-toy-projectplacement-prediction" tabindex="-1"><a class="anchor"
+                name="-day-13-end-to-end-ml-toy-projectplacement-prediction" tabindex="-1"
+                href="#-day-13-end-to-end-ml-toy-projectplacement-prediction"><span
+                    class="octicon octicon-link"></span></a>✅ <strong>Day 13: End-to-End ML Toy Project(Placement
+                Prediction)</strong></h3>
+        <hr>
+        <h3 id="-objective" tabindex="-1"><a class="anchor" name="-objective" tabindex="-1" href="#-objective"><span
+                    class="octicon octicon-link"></span></a>🎯 <strong>Objective</strong>:</h3>
+        <p>To understand the complete machine learning pipeline:</p>
+        <ul>
+            <li>From raw data to deployment-ready model</li>
+            <li>Using classification (Logistic Regression) on a placement dataset</li>
+        </ul>
+        <hr>
+        <p><strong>📦 Step 0: Imports and Data Loading</strong>:</p>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+df <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span><span class="token string">'/content/placement.csv'</span><span class="token punctuation">)</span>
+</code></pre>
+        <ul>
+            <li>Load the dataset using pandas.</li>
+            <li>Use <code>.head()</code>, <code>.info()</code>, <code>.shape</code>, <code>.describe()</code> to explore
+                the dataset.</li>
+        </ul>
+        <pre class="language-python" tabindex="0"><code class="language-python">df <span class="token operator">=</span> df<span class="token punctuation">.</span>iloc<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">:</span><span class="token punctuation">]</span>  <span class="token comment"># Remove first unnamed index column</span>
+</code></pre>
+        <hr>
+        <p><strong>📊 Step 1: Data Visualization and EDA</strong>:</p>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
+plt<span class="token punctuation">.</span>scatter<span class="token punctuation">(</span>df<span class="token punctuation">[</span><span class="token string">'cgpa'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> df<span class="token punctuation">[</span><span class="token string">'iq'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> c<span class="token operator">=</span>df<span class="token punctuation">[</span><span class="token string">'placement'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+        <ul>
+            <li>Visualize the relationship between CGPA and IQ.</li>
+            <li>Color indicates placement status (<code>0</code> or <code>1</code>).</li>
+            <li>Helps see if a linear boundary might work (good for logistic regression).</li>
+        </ul>
+        <hr>
+        <p><strong>🔍 Step 2: Feature and Label Extraction</strong>:</p>
+        <pre class="language-python" tabindex="0"><code class="language-python">X <span class="token operator">=</span> df<span class="token punctuation">.</span>iloc<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">:</span><span class="token number">2</span><span class="token punctuation">]</span>  <span class="token comment"># Features: CGPA, IQ</span>
+y <span class="token operator">=</span> df<span class="token punctuation">.</span>iloc<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span>   <span class="token comment"># Label: Placement (0 or 1)</span>
+</code></pre>
+        <ul>
+            <li><code>X</code> → Input features</li>
+            <li><code>y</code> → Target output</li>
+        </ul>
+        <hr>
+        <p><strong>📤 Step 3: Train-Test Split</strong>:</p>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>model_selection <span class="token keyword">import</span> train_test_split
+X_train<span class="token punctuation">,</span> X_test<span class="token punctuation">,</span> y_train<span class="token punctuation">,</span> y_test <span class="token operator">=</span> train_test_split<span class="token punctuation">(</span>X<span class="token punctuation">,</span> y<span class="token punctuation">,</span> test_size<span class="token operator">=</span><span class="token number">0.1</span><span class="token punctuation">, random_state<span class="token operator">=</span><span class="token number">0</span>)</span>
+</code></pre>
+        <ul>
+            <li>Split the data into training and testing (10% test data).</li>
+            <li><code>random_state</code> is set to <code>0</code>, so split did not varies each run.</li>
+        </ul>
+        <hr>
+        <p><strong>📏 Step 4: Feature Scaling</strong>:</p>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>preprocessing <span class="token keyword">import</span> StandardScaler
+scaler <span class="token operator">=</span> StandardScaler<span class="token punctuation">(</span><span class="token punctuation">)</span>
+X_train <span class="token operator">=</span> scaler<span class="token punctuation">.</span>fit_transform<span class="token punctuation">(</span>X_train<span class="token punctuation">)</span>
+X_test <span class="token operator">=</span> scaler<span class="token punctuation">.</span>transform<span class="token punctuation">(</span>X_test<span class="token punctuation">)</span>
+</code></pre>
+        <ul>
+            <li>Standardizes features to mean = 0 and std = 1.</li>
+            <li>Improves training speed and performance for gradient-based models.</li>
+        </ul>
+        <hr>
+        <p><strong>🤖 Step 5: Model Training (Logistic Regression)</strong>:</p>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>linear_model <span class="token keyword">import</span> LogisticRegression
+clf <span class="token operator">=</span> LogisticRegression<span class="token punctuation">(</span><span class="token punctuation">)</span>
+clf<span class="token punctuation">.</span>fit<span class="token punctuation">(</span>X_train<span class="token punctuation">,</span> y_train<span class="token punctuation">)</span>
+</code></pre>
+        <ul>
+            <li>Logistic Regression is used as a binary classifier.</li>
+            <li>Model learns a decision boundary.</li>
+        </ul>
+        <hr>
+        <p><strong>🧪 Step 6: Model Evaluation</strong>:</p>
+        <pre class="language-python" tabindex="0"><code class="language-python">y_pred <span class="token operator">=</span> clf<span class="token punctuation">.</span>predict<span class="token punctuation">(</span>X_test<span class="token punctuation">)</span>
+<span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>metrics <span class="token keyword">import</span> accuracy_score
+accuracy_score<span class="token punctuation">(</span>y_test<span class="token punctuation">,</span> y_pred<span class="token punctuation">)</span>
+</code></pre>
+        <ul>
+            <li>Compares predicted labels with actual labels.</li>
+            <li>Returns accuracy as a performance metric.</li>
+        </ul>
+        <hr>
+        <p><strong>📈 Step 7: Decision Boundary Visualization</strong>:</p>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">from</span> mlxtend<span class="token punctuation">.</span>plotting <span class="token keyword">import</span> plot_decision_regions
+plot_decision_regions<span class="token punctuation">(</span>X_train<span class="token punctuation">,</span> y_train<span class="token punctuation">.</span>values<span class="token punctuation">,</span> clf<span class="token operator">=</span>clf<span class="token punctuation">,</span> legend<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">)</span>
+</code></pre>
+        <ul>
+            <li>Visualize how the model separates classes.</li>
+            <li>Shows decision regions based on the learned boundary.</li>
+        </ul>
+        <hr>
+        <p><strong>💾 Step 8: Save the Model</strong>:</p>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">import</span> pickle
+pickle<span class="token punctuation">.</span>dump<span class="token punctuation">(</span>clf<span class="token punctuation">,</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'model.pkl'</span><span class="token punctuation">,</span> <span class="token string">'wb'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+        <ul>
+            <li>Saves the trained model in binary format.</li>
+            <li>Can be loaded later for prediction or deployment.</li>
+        </ul>
+        <hr>
+        <p><strong>📌 Workflow Overview</strong>:</p>
+        <pre><code>1. Data Loading
+2. Preprocessing (EDA + Cleaning)
+3. Feature Extraction
+4. Train-Test Split
+5. Feature Scaling
+6. Model Training
+7. Evaluation
+8. Deployment (Saving Model)
+</code></pre>
+        <blockquote>
+            <p>This toy project shows how <strong>each ML step connects</strong> — use this structure in your future
+                projects too!</p>
+        </blockquote>
+        <hr>
+        <h3 id="-day-14-framing-a-machine-learning-problem" tabindex="-1"><a class="anchor"
+                name="-day-14-framing-a-machine-learning-problem" tabindex="-1"
+                href="#-day-14-framing-a-machine-learning-problem"><span class="octicon octicon-link"></span></a>✅
+            <strong>Day 14: Framing a Machine Learning Problem</strong>
+        </h3>
+        <p><strong>Step-by-Step Breakdown</strong>:</p>
+        <ol>
+            <li>Business Problem → ML Problem</li>
+            <li>Choose <strong>type of ML</strong>: Regression, Classification, Clustering</li>
+            <li>Check existing solutions (if any)</li>
+            <li>Define <strong>metrics</strong> to measure success (e.g., accuracy, RMSE)</li>
+            <li>Choose <strong>Online vs Batch Learning</strong></li>
+            <li>Assumption checks (feature distributions, nulls)</li>
+        </ol>
+        <blockquote>
+            <p>💡 <em>Framing the problem is 80% of the project.</em> Don’t rush this part.</p>
+        </blockquote>
+        <hr>
+        <h3 id="-day-15-working-with-csv-files" tabindex="-1"><a class="anchor" name="-day-15-working-with-csv-files"
+                tabindex="-1" href="#-day-15-working-with-csv-files"><span class="octicon octicon-link"></span></a>✅
+            <strong>Day 15: Working with CSV Files</strong>
+        </h3>
+        <p><strong>📌 Note</strong> From Day 15 also refer notes from
+            <code>D:\Desktop\python practice\ML journey\100-days-of-machine-learning</code>
+            <strong>Python Example</strong>:
+        </p>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+
+<span class="token comment"># Load data</span>
+df <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span><span class="token string">'data.csv'</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Show top 5 rows</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>df<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Save to file</span>
+df<span class="token punctuation">.</span>to_csv<span class="token punctuation">(</span><span class="token string">'output.csv'</span><span class="token punctuation">,</span> index<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>
+</code></pre>
+        <p><strong>🛠️ Useful Functions</strong>:</p>
+        <ul>
+            <li><code>df.info()</code> – Structure of dataset</li>
+            <li><code>df.describe()</code> – Statistical summary</li>
+            <li><code>df.columns</code>, <code>df.shape</code>, <code>df.dtypes</code></li>
+        </ul>
+        <p><strong>💡 Tip</strong>: Always inspect the data <em>before</em> training your model!</p>
+        <hr>
+        <h3 id="-summary-for-days-1015" tabindex="-1"><a class="anchor" name="-summary-for-days-1015" tabindex="-1"
+                href="#-summary-for-days-1015"><span class="octicon octicon-link"></span></a>🔚 Summary for Days 10–15
+        </h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Key Theme</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10</td>
+                    <td>Job roles in DS/ML</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Tensors (core DL concept)</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>ML tools setup</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>End-to-end toy project</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Framing the ML problem</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>CSV data handling in Pandas</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h2 id="-bhramastra-notes--day-16-to-day-20" tabindex="-1"><a class="anchor"
+                name="-bhramastra-notes--day-16-to-day-20" tabindex="-1"
+                href="#-bhramastra-notes--day-16-to-day-20"><span class="octicon octicon-link"></span></a>🧠 Bhramastra
+            Notes — Day 16 to Day 20</h2>
+        <hr>
+        <h3 id="-day-16-working-with-json--sql-data" tabindex="-1"><a class="anchor"
+                name="-day-16-working-with-json--sql-data" tabindex="-1"
+                href="#-day-16-working-with-json--sql-data"><span class="octicon octicon-link"></span></a>✅ <strong>Day
+                16: Working with JSON &amp; SQL Data</strong></h3>
+        <p><strong>📦 JSON (JavaScript Object Notation)</strong></p>
+        <ul>
+            <li>Format for semi-structured data (API responses, configs, logs)</li>
+        </ul>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+<span class="token keyword">import</span> json
+
+<span class="token comment"># Load JSON from file</span>
+df <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_json<span class="token punctuation">(</span><span class="token string">'data.json'</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Nested JSON example</span>
+<span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'nested.json'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+    data <span class="token operator">=</span> json<span class="token punctuation">.</span>load<span class="token punctuation">(</span>f<span class="token punctuation">)</span>
+df <span class="token operator">=</span> pd<span class="token punctuation">.</span>json_normalize<span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+</code></pre>
+        <hr>
+        <p><strong>🗄️ SQL Data Access with Python (using SQLite/PostgreSQL/MySQL)</strong></p>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">import</span> sqlite3
+conn <span class="token operator">=</span> sqlite3<span class="token punctuation">.</span>connect<span class="token punctuation">(</span><span class="token string">'mydata.db'</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Run SQL query</span>
+df <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_sql_query<span class="token punctuation">(</span><span class="token string">"SELECT * FROM customers"</span><span class="token punctuation">,</span> conn<span class="token punctuation">)</span>
+</code></pre>
+        <p><strong>🔑 Key Skills</strong>:</p>
+        <ul>
+            <li>Understand table structure (primary key, foreign key)</li>
+            <li>Use <code>JOIN</code>, <code>GROUP BY</code>, <code>WHERE</code> for querying</li>
+            <li>SQL + Pandas = 🔥 combo in real-world projects</li>
+        </ul>
+        <hr>
+        <h3 id="-day-17-fetching-data-from-apis" tabindex="-1"><a class="anchor" name="-day-17-fetching-data-from-apis"
+                tabindex="-1" href="#-day-17-fetching-data-from-apis"><span class="octicon octicon-link"></span></a>✅
+            <strong>Day 17: Fetching Data from APIs</strong>
+        </h3>
+        <p><strong>📌 APIs = Application Programming Interfaces</strong></p>
+        <ul>
+            <li>Used to get data from services like Twitter, YouTube, etc.</li>
+        </ul>
+        <p><strong>🛠️ Example: Fetching JSON via API</strong></p>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">import</span> requests
+
+response <span class="token operator">=</span> requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">"https://api.example.com/data"</span><span class="token punctuation">)</span>
+data <span class="token operator">=</span> response<span class="token punctuation">.</span>json<span class="token punctuation">(</span><span class="token punctuation">)</span>
+df <span class="token operator">=</span> pd<span class="token punctuation">.</span>json_normalize<span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+</code></pre>
+        <p><strong>Key Terms</strong>:</p>
+        <ul>
+            <li><code>GET</code>, <code>POST</code> methods</li>
+            <li><code>Headers</code>, <code>Parameters</code>, <code>Token</code> (for authentication)</li>
+        </ul>
+        <p><strong>🔒 Tip</strong>: Always handle failures with <code>try-except</code> and check
+            <code>response.status_code</code>.
+        </p>
+        <hr>
+        <h3 id="-day-18-web-scraping" tabindex="-1"><a class="anchor" name="-day-18-web-scraping" tabindex="-1"
+                href="#-day-18-web-scraping"><span class="octicon octicon-link"></span></a>✅ <strong>Day 18: Web
+                Scraping</strong></h3>
+        <p><strong>📌 Used when no API is available</strong></p>
+        <p><strong>Tools</strong>: <code>requests</code>, <code>BeautifulSoup</code>, <code>Selenium</code></p>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">from</span> bs4 <span class="token keyword">import</span> BeautifulSoup
+<span class="token keyword">import</span> requests
+
+url <span class="token operator">=</span> <span class="token string">'https://example.com'</span>
+r <span class="token operator">=</span> requests<span class="token punctuation">.</span>get<span class="token punctuation">(</span>url<span class="token punctuation">)</span>
+soup <span class="token operator">=</span> BeautifulSoup<span class="token punctuation">(</span>r<span class="token punctuation">.</span>text<span class="token punctuation">,</span> <span class="token string">'html.parser'</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Extract text</span>
+title <span class="token operator">=</span> soup<span class="token punctuation">.</span>find<span class="token punctuation">(</span><span class="token string">'h1'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>text
+</code></pre>
+        <p><strong>⚠️ Follow Website's <code>robots.txt</code> to avoid scraping forbidden content</strong></p>
+        <hr>
+        <h3 id="-day-19-understanding-your-data-descriptive-statistics" tabindex="-1"><a class="anchor"
+                name="-day-19-understanding-your-data-descriptive-statistics" tabindex="-1"
+                href="#-day-19-understanding-your-data-descriptive-statistics"><span
+                    class="octicon octicon-link"></span></a>✅ <strong>Day 19: Understanding Your Data (Descriptive
+                Statistics)</strong></h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Method</th>
+                    <th>Purpose</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>df.head()</code></td>
+                    <td>View top rows</td>
+                </tr>
+                <tr>
+                    <td><code>df.describe()</code></td>
+                    <td>Get mean, std, min, max</td>
+                </tr>
+                <tr>
+                    <td><code>df.info()</code></td>
+                    <td>Structure of dataset</td>
+                </tr>
+                <tr>
+                    <td><code>df.value_counts()</code></td>
+                    <td>Frequency of categorical values</td>
+                </tr>
+                <tr>
+                    <td><code>df.isnull().sum()</code></td>
+                    <td>Count missing values</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><strong>🔍 Stats to Look At</strong>:</p>
+        <ul>
+            <li><strong>Mean vs Median</strong> (detect skew)</li>
+            <li><strong>Standard Deviation</strong> (spread)</li>
+            <li><strong>Kurtosis / Skewness</strong> (distribution shape)</li>
+        </ul>
+        <hr>
+        <h3 id="-day-20-univariate-eda-exploratory-data-analysis" tabindex="-1"><a class="anchor"
+                name="-day-20-univariate-eda-exploratory-data-analysis" tabindex="-1"
+                href="#-day-20-univariate-eda-exploratory-data-analysis"><span class="octicon octicon-link"></span></a>✅
+            <strong>Day 20: Univariate EDA (Exploratory Data Analysis)</strong>
+        </h3>
+        <p><strong>📊 Focus on 1 variable at a time</strong></p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Data Type</th>
+                    <th>Visualization</th>
+                    <th>Function</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Numerical</td>
+                    <td>Histogram, Boxplot</td>
+                    <td><code>sns.histplot</code>, <code>plt.boxplot</code></td>
+                </tr>
+                <tr>
+                    <td>Categorical</td>
+                    <td>Bar Chart</td>
+                    <td><code>sns.countplot</code>, <code>df.value_counts()</code></td>
+                </tr>
+            </tbody>
+        </table>
+        <p><strong>Python Examples</strong>:</p>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">import</span> seaborn <span class="token keyword">as</span> sns
+<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
+
+sns<span class="token punctuation">.</span>histplot<span class="token punctuation">(</span>df<span class="token punctuation">[</span><span class="token string">'age'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+sns<span class="token punctuation">.</span>boxplot<span class="token punctuation">(</span>x<span class="token operator">=</span>df<span class="token punctuation">[</span><span class="token string">'salary'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+        <p><strong>🧠 Goal</strong>: Understand data range, distribution, outliers, skewness.</p>
+        <hr>
+        <h3 id="-summary-days-1620" tabindex="-1"><a class="anchor" name="-summary-days-1620" tabindex="-1"
+                href="#-summary-days-1620"><span class="octicon octicon-link"></span></a>🧠 Summary (Days 16–20)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Focus</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>16</td>
+                    <td>JSON &amp; SQL file handling</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>Fetching API data</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>Web Scraping</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>Descriptive stats</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>Univariate EDA (Visualization + Analysis)</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h2 id="-bhramastra-notes--day-21-to-day-25-detailed" tabindex="-1"><a class="anchor"
+                name="-bhramastra-notes--day-21-to-day-25-detailed" tabindex="-1"
+                href="#-bhramastra-notes--day-21-to-day-25-detailed"><span class="octicon octicon-link"></span></a>🧠
+            Bhramastra Notes — Day 21 to Day 25 (Detailed)</h2>
+        <hr>
+        <h3 id="-day-21-bivariate--multivariate-eda" tabindex="-1"><a class="anchor"
+                name="-day-21-bivariate--multivariate-eda" tabindex="-1"
+                href="#-day-21-bivariate--multivariate-eda"><span class="octicon octicon-link"></span></a>✅ <strong>Day
+                21: Bivariate &amp; Multivariate EDA</strong></h3>
+        <h4 id="-bivariate-analysis" tabindex="-1"><a class="anchor" name="-bivariate-analysis" tabindex="-1"
+                href="#-bivariate-analysis"><span class="octicon octicon-link"></span></a>🔍 Bivariate Analysis:</h4>
+        <ul>
+            <li>Study relationship between <strong>2 variables</strong></li>
+            <li>Useful for identifying <strong>correlations or group-wise trends</strong></li>
+        </ul>
+        <table>
+            <thead>
+                <tr>
+                    <th>Variable Type</th>
+                    <th>Visualization</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Num + Num</td>
+                    <td>Scatter plot, Correlation heatmap</td>
+                </tr>
+                <tr>
+                    <td>Cat + Num</td>
+                    <td>Boxplot, Violin plot</td>
+                </tr>
+                <tr>
+                    <td>Cat + Cat</td>
+                    <td>Grouped bar chart, Stacked bar</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><strong>📌 Code Examples:</strong></p>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token comment"># Numerical vs Numerical</span>
+sns<span class="token punctuation">.</span>scatterplot<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token string">'age'</span><span class="token punctuation">,</span> y<span class="token operator">=</span><span class="token string">'salary'</span><span class="token punctuation">,</span> data<span class="token operator">=</span>df<span class="token punctuation">)</span>
+
+<span class="token comment"># Categorical vs Numerical</span>
+sns<span class="token punctuation">.</span>boxplot<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token string">'gender'</span><span class="token punctuation">,</span> y<span class="token operator">=</span><span class="token string">'salary'</span><span class="token punctuation">,</span> data<span class="token operator">=</span>df<span class="token punctuation">)</span>
+
+<span class="token comment"># Correlation</span>
+df<span class="token punctuation">.</span>corr<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment"># Numerical only</span>
+sns<span class="token punctuation">.</span>heatmap<span class="token punctuation">(</span>df<span class="token punctuation">.</span>corr<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> annot<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> cmap<span class="token operator">=</span><span class="token string">'coolwarm'</span><span class="token punctuation">)</span>
+</code></pre>
+        <h4 id="-multivariate-analysis" tabindex="-1"><a class="anchor" name="-multivariate-analysis" tabindex="-1"
+                href="#-multivariate-analysis"><span class="octicon octicon-link"></span></a>🔍 Multivariate Analysis:
+        </h4>
+        <ul>
+            <li>Explore 3 or more variables together</li>
+            <li>Use <strong>pairplots</strong>, <strong>hue</strong>, and <strong>facet plots</strong></li>
+        </ul>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token comment"># All numeric pairs</span>
+sns<span class="token punctuation">.</span>pairplot<span class="token punctuation">(</span>df<span class="token punctuation">)</span>
+
+<span class="token comment"># Add color grouping</span>
+sns<span class="token punctuation">.</span>pairplot<span class="token punctuation">(</span>df<span class="token punctuation">,</span> hue<span class="token operator">=</span><span class="token string">'target'</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Facet plot</span>
+sns<span class="token punctuation">.</span>catplot<span class="token punctuation">(</span>x<span class="token operator">=</span><span class="token string">'gender'</span><span class="token punctuation">,</span> y<span class="token operator">=</span><span class="token string">'salary'</span><span class="token punctuation">,</span> col<span class="token operator">=</span><span class="token string">'education'</span><span class="token punctuation">,</span> data<span class="token operator">=</span>df<span class="token punctuation">,</span> kind<span class="token operator">=</span><span class="token string">'bar'</span><span class="token punctuation">)</span>
+</code></pre>
+        <blockquote>
+            <p>🔑 Tip: Always begin with bivariate → then explore multivariate if patterns are unclear.</p>
+        </blockquote>
+        <hr>
+        <h3 id="-day-22-pandas-profiling-eda-automation-tool" tabindex="-1"><a class="anchor"
+                name="-day-22-pandas-profiling-eda-automation-tool" tabindex="-1"
+                href="#-day-22-pandas-profiling-eda-automation-tool"><span class="octicon octicon-link"></span></a>✅
+            <strong>Day 22: Pandas Profiling (EDA Automation Tool)</strong>
+        </h3>
+        <h4 id="️-what-it-is" tabindex="-1"><a class="anchor" name="️-what-it-is" tabindex="-1"
+                href="#️-what-it-is"><span class="octicon octicon-link"></span></a>⚙️ What it is:</h4>
+        <ul>
+            <li>Automatically generates a complete EDA report from a Pandas DataFrame.</li>
+        </ul>
+        <h4 id="-how-to-use" tabindex="-1"><a class="anchor" name="-how-to-use" tabindex="-1" href="#-how-to-use"><span
+                    class="octicon octicon-link"></span></a>🔧 How to Use:</h4>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">import</span> pandas_profiling
+profile <span class="token operator">=</span> df<span class="token punctuation">.</span>profile_report<span class="token punctuation">(</span>title<span class="token operator">=</span><span class="token string">"EDA Report"</span><span class="token punctuation">)</span>
+profile<span class="token punctuation">.</span>to_file<span class="token punctuation">(</span><span class="token string">"output.html"</span><span class="token punctuation">)</span>
+</code></pre>
+        <h4 id="-it-includes" tabindex="-1"><a class="anchor" name="-it-includes" tabindex="-1"
+                href="#-it-includes"><span class="octicon octicon-link"></span></a>📊 It includes:</h4>
+        <ul>
+            <li>Variable summary</li>
+            <li>Missing values</li>
+            <li>Correlation matrix</li>
+            <li>Skewness &amp; distributions</li>
+            <li>Duplicate detection</li>
+            <li>Interaction graphs</li>
+        </ul>
+        <h4 id="️-when-to-use" tabindex="-1"><a class="anchor" name="️-when-to-use" tabindex="-1"
+                href="#️-when-to-use"><span class="octicon octicon-link"></span></a>⚠️ When to use:</h4>
+        <ul>
+            <li><strong>Early</strong> in the pipeline for fast insights.</li>
+            <li>Not suitable for huge datasets without sampling.</li>
+        </ul>
+        <blockquote>
+            <p>⚠️ Use only when you're starting to explore — for production, manual EDA is better and more controllable.
+            </p>
+        </blockquote>
+        <hr>
+        <h3 id="-day-23-what-is-feature-engineering" tabindex="-1"><a class="anchor"
+                name="-day-23-what-is-feature-engineering" tabindex="-1"
+                href="#-day-23-what-is-feature-engineering"><span class="octicon octicon-link"></span></a>✅ <strong>Day
+                23: What is Feature Engineering?</strong></h3>
+        <h4 id="-purpose" tabindex="-1"><a class="anchor" name="-purpose" tabindex="-1" href="#-purpose"><span
+                    class="octicon octicon-link"></span></a>🎯 Purpose:</h4>
+        <p>Improving model performance by <strong>transforming raw data</strong> into useful features.</p>
+        <h4 id="-categories" tabindex="-1"><a class="anchor" name="-categories" tabindex="-1" href="#-categories"><span
+                    class="octicon octicon-link"></span></a>🔨 Categories:</h4>
+        <ol>
+            <li><strong>Missing Value Imputation</strong></li>
+            <li><strong>Handling Categorical Features</strong></li>
+            <li><strong>Outlier Detection</strong></li>
+            <li><strong>Feature Scaling</strong></li>
+            <li><strong>Feature Construction</strong> (e.g., Age → AgeGroup)</li>
+            <li><strong>Feature Extraction</strong> (e.g., PCA)</li>
+        </ol>
+        <h4 id="-quote" tabindex="-1"><a class="anchor" name="-quote" tabindex="-1" href="#-quote"><span
+                    class="octicon octicon-link"></span></a>💬 Quote:</h4>
+        <blockquote>
+            <p>“Better features beat better models.”</p>
+        </blockquote>
+        <h4 id="-example" tabindex="-1"><a class="anchor" name="-example" tabindex="-1" href="#-example"><span
+                    class="octicon octicon-link"></span></a>🔍 Example:</h4>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token comment"># Construct new feature from date</span>
+df<span class="token punctuation">[</span><span class="token string">'age'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">2025</span> <span class="token operator">-</span> df<span class="token punctuation">[</span><span class="token string">'birth_year'</span><span class="token punctuation">]</span>
+</code></pre>
+        <h4 id="-real-world-tip" tabindex="-1"><a class="anchor" name="-real-world-tip" tabindex="-1"
+                href="#-real-world-tip"><span class="octicon octicon-link"></span></a>🧠 Real-world Tip:</h4>
+        <p>Domain knowledge + creativity = best feature engineering!</p>
+        <hr>
+        <h3 id="-day-24-feature-scaling--standardization" tabindex="-1"><a class="anchor"
+                name="-day-24-feature-scaling--standardization" tabindex="-1"
+                href="#-day-24-feature-scaling--standardization"><span class="octicon octicon-link"></span></a>✅
+            <strong>Day 24: Feature Scaling — Standardization</strong>
+        </h3>
+        <h4 id="️-why-needed" tabindex="-1"><a class="anchor" name="️-why-needed" tabindex="-1"
+                href="#️-why-needed"><span class="octicon octicon-link"></span></a>⚖️ Why Needed:</h4>
+        <ul>
+            <li>ML algorithms like <strong>KNN</strong>, <strong>SVM</strong>, <strong>Logistic Regression</strong>, and
+                <strong>Gradient Descent</strong> are sensitive to feature scale.
+            </li>
+        </ul>
+        <h4 id="-standardization" tabindex="-1"><a class="anchor" name="-standardization" tabindex="-1"
+                href="#-standardization"><span class="octicon octicon-link"></span></a>📐 Standardization:</h4>
+        <p><strong>Formula:</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            \( z = \frac{x - \mu}{\sigma} \)</p>
+
+        <ul>
+            <li>Mean (\(\mu\)) = 0</li>
+            <li>Standard Deviation (\(\sigma\)) = 1</li>
+        </ul>
+        <h4 id="-sklearn-code" tabindex="-1"><a class="anchor" name="-sklearn-code" tabindex="-1"
+                href="#-sklearn-code"><span class="octicon octicon-link"></span></a>📦 Sklearn Code:</h4>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>preprocessing <span class="token keyword">import</span> StandardScaler
+
+scaler <span class="token operator">=</span> StandardScaler<span class="token punctuation">(</span><span class="token punctuation">)</span>
+X_scaled <span class="token operator">=</span> scaler<span class="token punctuation">.</span>fit_transform<span class="token punctuation">(</span>X<span class="token punctuation">)</span>
+</code></pre>
+        <h4 id="-when-to-use" tabindex="-1"><a class="anchor" name="-when-to-use" tabindex="-1"
+                href="#-when-to-use"><span class="octicon octicon-link"></span></a>🧪 When to Use:</h4>
+        <ul>
+            <li>Features are <strong>normally distributed</strong></li>
+            <li>Algorithms using <strong>distance</strong> or <strong>gradient descent</strong></li>
+        </ul>
+        <hr>
+        <h3 id="-day-25-feature-scaling--normalization" tabindex="-1"><a class="anchor"
+                name="-day-25-feature-scaling--normalization" tabindex="-1"
+                href="#-day-25-feature-scaling--normalization"><span class="octicon octicon-link"></span></a>✅
+            <strong>Day 25: Feature Scaling — Normalization</strong>
+        </h3>
+        <h4 id="-normalization" tabindex="-1"><a class="anchor" name="-normalization" tabindex="-1"
+                href="#-normalization"><span class="octicon octicon-link"></span></a>📐 Normalization:</h4>
+        <p>Transforms features into a <strong>bounded range</strong> — typically [0, 1]</p>
+        <h4 id="-min-max-scaling" tabindex="-1"><a class="anchor" name="-min-max-scaling" tabindex="-1"
+                href="#-min-max-scaling"><span class="octicon octicon-link"></span></a>🔢 Min-Max Scaling:</h4>
+        <p><strong>Formula:</strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            \( x_{\text{norm}} = \frac{x - x_{\min}}{x_{\max} - x_{\min}} \)</p>
+
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>preprocessing <span class="token keyword">import</span> MinMaxScaler
+scaler <span class="token operator">=</span> MinMaxScaler<span class="token punctuation">(</span><span class="token punctuation">)</span>
+X_scaled <span class="token operator">=</span> scaler<span class="token punctuation">.</span>fit_transform<span class="token punctuation">(</span>X<span class="token punctuation">)</span>
+</code></pre>
+        <h4 id="-other-types" tabindex="-1"><a class="anchor" name="-other-types" tabindex="-1"
+                href="#-other-types"><span class="octicon octicon-link"></span></a>🔸 Other Types:</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>When to Use</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>MaxAbsScaler</strong></td>
+                    <td>Sparse data (keeps zero entries)</td>
+                </tr>
+                <tr>
+                    <td><strong>RobustScaler</strong></td>
+                    <td>Data with outliers</td>
+                </tr>
+                <tr>
+                    <td><strong>Mean Normalization</strong></td>
+                    <td>Not commonly used in sklearn</td>
+                </tr>
+                <tr>
+                    <td><strong>MinMaxScaler</strong></td>
+                    <td>When bounded output is expected (e.g., pixel values)</td>
+                </tr>
+            </tbody>
+        </table>
+        <h4 id="-when-to-use-normalization" tabindex="-1"><a class="anchor" name="-when-to-use-normalization"
+                tabindex="-1" href="#-when-to-use-normalization"><span class="octicon octicon-link"></span></a>💡 When
+            to Use Normalization:</h4>
+        <ul>
+            <li>Algorithms like <strong>KNN</strong>, <strong>Neural Networks</strong></li>
+            <li>Models where <strong>magnitude matters</strong></li>
+        </ul>
+        <hr>
+        <h3 id="-summary-days-2125" tabindex="-1"><a class="anchor" name="-summary-days-2125" tabindex="-1"
+                href="#-summary-days-2125"><span class="octicon octicon-link"></span></a>🔚 Summary (Days 21–25)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Focus</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>21</td>
+                    <td>Bivariate &amp; Multivariate EDA</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>Pandas Profiling (Auto EDA)</td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>Feature Engineering Overview</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>Feature Scaling – Standardization</td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>Feature Scaling – Normalization &amp; Robust Methods</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h2 id="-bhramastra-notes--day-26-to-day-30-detailed" tabindex="-1"><a class="anchor"
+                name="-bhramastra-notes--day-26-to-day-30-detailed" tabindex="-1"
+                href="#-bhramastra-notes--day-26-to-day-30-detailed"><span class="octicon octicon-link"></span></a>🧠
+            Bhramastra Notes — Day 26 to Day 30 (Detailed)</h2>
+        <hr>
+        <h3 id="-day-26-encoding-categorical-variables--ordinal--label-encoding" tabindex="-1"><a class="anchor"
+                name="-day-26-encoding-categorical-variables--ordinal--label-encoding" tabindex="-1"
+                href="#-day-26-encoding-categorical-variables--ordinal--label-encoding"><span
+                    class="octicon octicon-link"></span></a>✅ <strong>Day 26: Encoding Categorical Variables – Ordinal
+                &amp; Label Encoding</strong></h3>
+        <h4 id="-why-encoding-is-needed" tabindex="-1"><a class="anchor" name="-why-encoding-is-needed" tabindex="-1"
+                href="#-why-encoding-is-needed"><span class="octicon octicon-link"></span></a>🎯 Why Encoding Is Needed:
+        </h4>
+        <p>ML models only work with <strong>numerical inputs</strong>, so we must convert categorical variables (like
+            'Male', 'Female') into numbers.</p>
+        <hr>
+        <h3 id="-1-ordinal-encoding" tabindex="-1"><a class="anchor" name="-1-ordinal-encoding" tabindex="-1"
+                href="#-1-ordinal-encoding"><span class="octicon octicon-link"></span></a>🔷 <strong>1. Ordinal
+                Encoding</strong></h3>
+        <ul>
+            <li>Assigns a <strong>rank</strong> or <strong>order</strong> to each category</li>
+            <li>Use when categories have a <strong>logical sequence</strong></li>
+        </ul>
+        <p>Example:</p>
+        <pre class="language-python" tabindex="0"><code class="language-python">education <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'High School'</span><span class="token punctuation">,</span> <span class="token string">'Bachelor'</span><span class="token punctuation">,</span> <span class="token string">'Master'</span><span class="token punctuation">,</span> <span class="token string">'PhD'</span><span class="token punctuation">]</span>
+Encoded <span class="token keyword">as</span> → <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span>
+</code></pre>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>preprocessing <span class="token keyword">import</span> OrdinalEncoder
+
+encoder <span class="token operator">=</span> OrdinalEncoder<span class="token punctuation">(</span><span class="token punctuation">)</span>
+X<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">'education_encoded'</span><span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">=</span> encoder<span class="token punctuation">.</span>fit_transform<span class="token punctuation">(</span>X<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">'education'</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+        <blockquote>
+            <p>⚠️ Don't use this on nominal (unordered) data — the model may assume mathematical relationship that
+                doesn’t exist.</p>
+        </blockquote>
+        <hr>
+        <h3 id="-2-label-encoding" tabindex="-1"><a class="anchor" name="-2-label-encoding" tabindex="-1"
+                href="#-2-label-encoding"><span class="octicon octicon-link"></span></a>🔷 <strong>2. Label
+                Encoding</strong></h3>
+        <ul>
+            <li>Converts categories into <strong>integer values</strong></li>
+            <li>Used for <strong>target/label</strong> column in classification (not features)</li>
+        </ul>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>preprocessing <span class="token keyword">import</span> LabelEncoder
+
+le <span class="token operator">=</span> LabelEncoder<span class="token punctuation">(</span><span class="token punctuation">)</span>
+y <span class="token operator">=</span> le<span class="token punctuation">.</span>fit_transform<span class="token punctuation">(</span>y<span class="token punctuation">)</span>
+</code></pre>
+        <p>Example:</p>
+        <pre><code>['dog', 'cat', 'dog', 'fish'] → [1, 0, 1, 2]
+</code></pre>
+        <blockquote>
+            <p>⚠️ For input features, LabelEncoding is dangerous — use OneHotEncoding instead for unordered variables.
+            </p>
+        </blockquote>
+        <hr>
+        <h3 id="-day-27-one-hot-encoding-ohe" tabindex="-1"><a class="anchor" name="-day-27-one-hot-encoding-ohe"
+                tabindex="-1" href="#-day-27-one-hot-encoding-ohe"><span class="octicon octicon-link"></span></a>✅
+            <strong>Day 27: One Hot Encoding (OHE)</strong>
+        </h3>
+        <h4 id="-what-it-does" tabindex="-1"><a class="anchor" name="-what-it-does" tabindex="-1"
+                href="#-what-it-does"><span class="octicon octicon-link"></span></a>🔳 What it does:</h4>
+        <p>Creates <strong>binary columns</strong> for each category.</p>
+        <p>Example:</p>
+        <pre><code>Color → ['Red', 'Blue', 'Green']
+OHE → [1,0,0], [0,1,0], [0,0,1]
+</code></pre>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>preprocessing <span class="token keyword">import</span> OneHotEncoder
+ohe <span class="token operator">=</span> OneHotEncoder<span class="token punctuation">(</span>sparse<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">,</span> drop<span class="token operator">=</span><span class="token string">'first'</span><span class="token punctuation">)</span>
+X_encoded <span class="token operator">=</span> ohe<span class="token punctuation">.</span>fit_transform<span class="token punctuation">(</span>X<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">'color'</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+        <hr>
+        <h4 id="-dummy-variable-trap" tabindex="-1"><a class="anchor" name="-dummy-variable-trap" tabindex="-1"
+                href="#-dummy-variable-trap"><span class="octicon octicon-link"></span></a>🧠 Dummy Variable Trap:</h4>
+        <ul>
+            <li>Happens when OHE creates <strong>multicollinearity</strong></li>
+            <li>Fix: use <code>drop='first'</code> to remove 1 column</li>
+        </ul>
+        <hr>
+        <h4 id="-when-to-use-ohe-vs-ordinal" tabindex="-1"><a class="anchor" name="-when-to-use-ohe-vs-ordinal"
+                tabindex="-1" href="#-when-to-use-ohe-vs-ordinal"><span class="octicon octicon-link"></span></a>✅ When
+            to use OHE vs Ordinal:</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Data Type</th>
+                    <th>Encoding</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ordered (e.g. Low &lt; Medium &lt; High)</td>
+                    <td>Ordinal</td>
+                </tr>
+                <tr>
+                    <td>Unordered (e.g. City, Gender)</td>
+                    <td>One Hot Encoding</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h3 id="-day-28-columntransformer-in-sklearn" tabindex="-1"><a class="anchor"
+                name="-day-28-columntransformer-in-sklearn" tabindex="-1"
+                href="#-day-28-columntransformer-in-sklearn"><span class="octicon octicon-link"></span></a>✅ <strong>Day
+                28: ColumnTransformer in Sklearn</strong></h3>
+        <h4 id="-what-is-it" tabindex="-1"><a class="anchor" name="-what-is-it" tabindex="-1" href="#-what-is-it"><span
+                    class="octicon octicon-link"></span></a>🎯 What is it?</h4>
+        <p>Efficient way to apply <strong>different preprocessing steps to different columns</strong>.</p>
+        <hr>
+        <h3 id="-example-use-case" tabindex="-1"><a class="anchor" name="-example-use-case" tabindex="-1"
+                href="#-example-use-case"><span class="octicon octicon-link"></span></a>🔧 Example Use Case:</h3>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>compose <span class="token keyword">import</span> ColumnTransformer
+<span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>preprocessing <span class="token keyword">import</span> StandardScaler<span class="token punctuation">,</span> OneHotEncoder
+
+ct <span class="token operator">=</span> ColumnTransformer<span class="token punctuation">(</span>
+    transformers<span class="token operator">=</span><span class="token punctuation">[</span>
+        <span class="token punctuation">(</span><span class="token string">'num'</span><span class="token punctuation">,</span> StandardScaler<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'age'</span><span class="token punctuation">,</span> <span class="token string">'salary'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token punctuation">(</span><span class="token string">'cat'</span><span class="token punctuation">,</span> OneHotEncoder<span class="token punctuation">(</span>drop<span class="token operator">=</span><span class="token string">'first'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'gender'</span><span class="token punctuation">,</span> <span class="token string">'city'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>remainder<span class="token operator">=</span><span class="token string">'passthrough'</span>
+<span class="token punctuation">)</span>
+
+X_processed <span class="token operator">=</span> ct<span class="token punctuation">.</span>fit_transform<span class="token punctuation">(</span>X<span class="token punctuation">)</span>
+</code></pre>
+        <ul>
+            <li><code>'num'</code> applies <code>StandardScaler</code> to numerical features</li>
+            <li><code>'cat'</code> applies <code>OneHotEncoder</code> to categorical features</li>
+        </ul>
+        <hr>
+        <h3 id="-why-its-useful" tabindex="-1"><a class="anchor" name="-why-its-useful" tabindex="-1"
+                href="#-why-its-useful"><span class="octicon octicon-link"></span></a>🔗 Why it’s useful:</h3>
+        <ul>
+            <li><strong>Keeps preprocessing organized</strong></li>
+            <li>Works smoothly inside <strong>pipelines</strong></li>
+            <li>Handles <strong>mixed-type</strong> datasets easily</li>
+        </ul>
+        <hr>
+        <h3 id="-bonus-common-pitfalls-to-avoid" tabindex="-1"><a class="anchor" name="-bonus-common-pitfalls-to-avoid"
+                tabindex="-1" href="#-bonus-common-pitfalls-to-avoid"><span class="octicon octicon-link"></span></a>✅
+            Bonus: Common Pitfalls to Avoid</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Mistake</th>
+                    <th>Fix</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Using LabelEncoder on features</td>
+                    <td>Use OHE or Ordinal depending on context</td>
+                </tr>
+                <tr>
+                    <td>Not scaling after encoding</td>
+                    <td>Apply <code>StandardScaler</code> on numeric columns only</td>
+                </tr>
+                <tr>
+                    <td>Manual encoding on large data</td>
+                    <td>Use <code>ColumnTransformer</code> to automate and chain steps</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h3 id="-summary-days-2628" tabindex="-1"><a class="anchor" name="-summary-days-2628" tabindex="-1"
+                href="#-summary-days-2628"><span class="octicon octicon-link"></span></a>🔚 Summary (Days 26–28)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Focus</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>26</td>
+                    <td>Ordinal &amp; Label Encoding</td>
+                </tr>
+                <tr>
+                    <td>27</td>
+                    <td>One Hot Encoding &amp; Dummy Variable Trap</td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td>ColumnTransformer — applying different preprocessing pipelines to columns</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <hr>
+        <h3 id="-day-29-machine-learning-pipelines-az" tabindex="-1"><a class="anchor"
+                name="-day-29-machine-learning-pipelines-az" tabindex="-1"
+                href="#-day-29-machine-learning-pipelines-az"><span class="octicon octicon-link"></span></a>✅
+            <strong>Day 29: Machine Learning Pipelines A–Z</strong>
+        </h3>
+        <h4 id="-why-pipelines" tabindex="-1"><a class="anchor" name="-why-pipelines" tabindex="-1"
+                href="#-why-pipelines"><span class="octicon octicon-link"></span></a>🎯 Why Pipelines?</h4>
+        <ul>
+            <li>Chains multiple preprocessing and modeling steps into <strong>one object</strong></li>
+            <li>Makes code <strong>clean</strong>, <strong>reusable</strong>, and <strong>deployable</strong></li>
+        </ul>
+        <hr>
+        <h3 id="-example-1" tabindex="-1"><a class="anchor" name="-example-1" tabindex="-1" href="#-example-1"><span
+                    class="octicon octicon-link"></span></a>🔧 Example:</h3>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>pipeline <span class="token keyword">import</span> Pipeline
+<span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>preprocessing <span class="token keyword">import</span> StandardScaler
+<span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>linear_model <span class="token keyword">import</span> LinearRegression
+
+pipe <span class="token operator">=</span> Pipeline<span class="token punctuation">(</span><span class="token punctuation">[</span>
+    <span class="token punctuation">(</span><span class="token string">'scaler'</span><span class="token punctuation">,</span> StandardScaler<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">(</span><span class="token string">'model'</span><span class="token punctuation">,</span> LinearRegression<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+pipe<span class="token punctuation">.</span>fit<span class="token punctuation">(</span>X_train<span class="token punctuation">,</span> y_train<span class="token punctuation">)</span>
+pipe<span class="token punctuation">.</span>predict<span class="token punctuation">(</span>X_test<span class="token punctuation">)</span>
+</code></pre>
+        <hr>
+        <h3 id="-real-use-with-columntransformer" tabindex="-1"><a class="anchor"
+                name="-real-use-with-columntransformer" tabindex="-1" href="#-real-use-with-columntransformer"><span
+                    class="octicon octicon-link"></span></a>🔗 Real Use with ColumnTransformer:</h3>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>compose <span class="token keyword">import</span> ColumnTransformer
+<span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>pipeline <span class="token keyword">import</span> Pipeline
+<span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>impute <span class="token keyword">import</span> SimpleImputer
+<span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>preprocessing <span class="token keyword">import</span> StandardScaler<span class="token punctuation">,</span> OneHotEncoder
+<span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>linear_model <span class="token keyword">import</span> LogisticRegression
+
+numeric_pipeline <span class="token operator">=</span> Pipeline<span class="token punctuation">(</span><span class="token punctuation">[</span>
+    <span class="token punctuation">(</span><span class="token string">'imputer'</span><span class="token punctuation">,</span> SimpleImputer<span class="token punctuation">(</span>strategy<span class="token operator">=</span><span class="token string">'mean'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">(</span><span class="token string">'scaler'</span><span class="token punctuation">,</span> StandardScaler<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+categorical_pipeline <span class="token operator">=</span> Pipeline<span class="token punctuation">(</span><span class="token punctuation">[</span>
+    <span class="token punctuation">(</span><span class="token string">'imputer'</span><span class="token punctuation">,</span> SimpleImputer<span class="token punctuation">(</span>strategy<span class="token operator">=</span><span class="token string">'most_frequent'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">(</span><span class="token string">'ohe'</span><span class="token punctuation">,</span> OneHotEncoder<span class="token punctuation">(</span>drop<span class="token operator">=</span><span class="token string">'first'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+preprocessor <span class="token operator">=</span> ColumnTransformer<span class="token punctuation">(</span><span class="token punctuation">[</span>
+    <span class="token punctuation">(</span><span class="token string">'num'</span><span class="token punctuation">,</span> numeric_pipeline<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'age'</span><span class="token punctuation">,</span> <span class="token string">'salary'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">(</span><span class="token string">'cat'</span><span class="token punctuation">,</span> categorical_pipeline<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'gender'</span><span class="token punctuation">,</span> <span class="token string">'city'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+pipeline <span class="token operator">=</span> Pipeline<span class="token punctuation">(</span><span class="token punctuation">[</span>
+    <span class="token punctuation">(</span><span class="token string">'preprocess'</span><span class="token punctuation">,</span> preprocessor<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">(</span><span class="token string">'model'</span><span class="token punctuation">,</span> LogisticRegression<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+        <hr>
+        <h3 id="-day-30-functiontransformer--log-reciprocal-square-root" tabindex="-1"><a class="anchor"
+                name="-day-30-functiontransformer--log-reciprocal-square-root" tabindex="-1"
+                href="#-day-30-functiontransformer--log-reciprocal-square-root"><span
+                    class="octicon octicon-link"></span></a>✅ <strong>Day 30: FunctionTransformer – Log, Reciprocal,
+                Square Root</strong></h3>
+        <h4 id="-used-for" tabindex="-1"><a class="anchor" name="-used-for" tabindex="-1" href="#-used-for"><span
+                    class="octicon octicon-link"></span></a>🔍 Used for:</h4>
+        <ul>
+            <li><strong>Non-linear transformation</strong> of numerical features</li>
+            <li>Helpful for <strong>skewed data</strong>, stabilizing variance</li>
+        </ul>
+        <hr>
+        <h3 id="-sklearn-functiontransformer-example" tabindex="-1"><a class="anchor"
+                name="-sklearn-functiontransformer-example" tabindex="-1"
+                href="#-sklearn-functiontransformer-example"><span class="octicon octicon-link"></span></a>🔧 Sklearn
+            FunctionTransformer Example:</h3>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>preprocessing <span class="token keyword">import</span> FunctionTransformer
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+
+log_transformer <span class="token operator">=</span> FunctionTransformer<span class="token punctuation">(</span>func<span class="token operator">=</span>np<span class="token punctuation">.</span>log1p<span class="token punctuation">)</span>
+X_transformed <span class="token operator">=</span> log_transformer<span class="token punctuation">.</span>fit_transform<span class="token punctuation">(</span>X<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">'income'</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+        <h4 id="-common-transforms" tabindex="-1"><a class="anchor" name="-common-transforms" tabindex="-1"
+                href="#-common-transforms"><span class="octicon octicon-link"></span></a>📐 Common Transforms:</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Use Case</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>log1p(x)</code></td>
+                    <td>Right-skewed (large values)</td>
+                </tr>
+                <tr>
+                    <td><code>1/x</code></td>
+                    <td>Exponential distribution</td>
+                </tr>
+                <tr>
+                    <td><code>sqrt(x)</code></td>
+                    <td>Moderate skew</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <hr>
+        <h2 id="-bhramastra-notes--day-31-to-day-35" tabindex="-1"><a class="anchor"
+                name="-bhramastra-notes--day-31-to-day-35" tabindex="-1"
+                href="#-bhramastra-notes--day-31-to-day-35"><span class="octicon octicon-link"></span></a>🧠 Bhramastra
+            Notes — Day 31 to Day 35</h2>
+        <hr>
+        <h3 id="-day-31-power-transformer--box-cox--yeo-johnson" tabindex="-1"><a class="anchor"
+                name="-day-31-power-transformer--box-cox--yeo-johnson" tabindex="-1"
+                href="#-day-31-power-transformer--box-cox--yeo-johnson"><span class="octicon octicon-link"></span></a>✅
+            <strong>Day 31: Power Transformer — Box-Cox &amp; Yeo-Johnson</strong>
+        </h3>
+        <h4 id="️-used-to-normalize-highly-skewed-data" tabindex="-1"><a class="anchor"
+                name="️-used-to-normalize-highly-skewed-data" tabindex="-1"
+                href="#️-used-to-normalize-highly-skewed-data"><span class="octicon octicon-link"></span></a>⚙️ Used to
+            <strong>normalize</strong> highly skewed data.
+        </h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Method</th>
+                    <th>Works On</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Box-Cox</td>
+                    <td>Only <strong>positive</strong> values</td>
+                </tr>
+                <tr>
+                    <td>Yeo-Johnson</td>
+                    <td>Handles <strong>negative + zero + positive</strong> values</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h3 id="-code" tabindex="-1"><a class="anchor" name="-code" tabindex="-1" href="#-code"><span
+                    class="octicon octicon-link"></span></a>🔧 Code:</h3>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>preprocessing <span class="token keyword">import</span> PowerTransformer
+
+pt <span class="token operator">=</span> PowerTransformer<span class="token punctuation">(</span>method<span class="token operator">=</span><span class="token string">'yeo-johnson'</span><span class="token punctuation">)</span>
+X_trans <span class="token operator">=</span> pt<span class="token punctuation">.</span>fit_transform<span class="token punctuation">(</span>X<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">'feature'</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+        <h4 id="-benefit" tabindex="-1"><a class="anchor" name="-benefit" tabindex="-1" href="#-benefit"><span
+                    class="octicon octicon-link"></span></a>📊 Benefit:</h4>
+        <p>After transformation, your feature’s distribution becomes <strong>more normal</strong>, helping many models
+            perform better.</p>
+        <hr>
+        <h3 id="-day-32-binning--binarization" tabindex="-1"><a class="anchor" name="-day-32-binning--binarization"
+                tabindex="-1" href="#-day-32-binning--binarization"><span class="octicon octicon-link"></span></a>✅
+            <strong>Day 32: Binning &amp; Binarization</strong>
+        </h3>
+        <h4 id="-purpose-1" tabindex="-1"><a class="anchor" name="-purpose-1" tabindex="-1" href="#-purpose-1"><span
+                    class="octicon octicon-link"></span></a>🎯 Purpose:</h4>
+        <ul>
+            <li>Simplifies numeric variables</li>
+            <li>Helps handle <strong>non-linear</strong> relationships</li>
+        </ul>
+        <hr>
+        <h3 id="-binning" tabindex="-1"><a class="anchor" name="-binning" tabindex="-1" href="#-binning"><span
+                    class="octicon octicon-link"></span></a>🔹 Binning:</h3>
+        <p>Divide continuous data into intervals.</p>
+        <pre class="language-python" tabindex="0"><code class="language-python">df<span class="token punctuation">[</span><span class="token string">'age_bin'</span><span class="token punctuation">]</span> <span class="token operator">=</span> pd<span class="token punctuation">.</span>cut<span class="token punctuation">(</span>df<span class="token punctuation">[</span><span class="token string">'age'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> bins<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span> <span class="token number">35</span><span class="token punctuation">,</span> <span class="token number">60</span><span class="token punctuation">,</span> <span class="token number">100</span><span class="token punctuation">]</span><span class="token punctuation">,</span> labels<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'Teen'</span><span class="token punctuation">,</span> <span class="token string">'Young'</span><span class="token punctuation">,</span> <span class="token string">'Adult'</span><span class="token punctuation">,</span> <span class="token string">'Senior'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+        <hr>
+        <h3 id="-quantile-binning" tabindex="-1"><a class="anchor" name="-quantile-binning" tabindex="-1"
+                href="#-quantile-binning"><span class="octicon octicon-link"></span></a>🔹 Quantile Binning:</h3>
+        <p>Equal number of samples per bin.</p>
+        <pre class="language-python" tabindex="0"><code class="language-python">df<span class="token punctuation">[</span><span class="token string">'bins'</span><span class="token punctuation">]</span> <span class="token operator">=</span> pd<span class="token punctuation">.</span>qcut<span class="token punctuation">(</span>df<span class="token punctuation">[</span><span class="token string">'income'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> q<span class="token operator">=</span><span class="token number">4</span><span class="token punctuation">,</span> labels<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">)</span>
+</code></pre>
+        <hr>
+        <h3 id="-kmeans-binning" tabindex="-1"><a class="anchor" name="-kmeans-binning" tabindex="-1"
+                href="#-kmeans-binning"><span class="octicon octicon-link"></span></a>🔹 KMeans Binning:</h3>
+        <p>Group similar values using clustering.</p>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>preprocessing <span class="token keyword">import</span> KBinsDiscretizer
+kbd <span class="token operator">=</span> KBinsDiscretizer<span class="token punctuation">(</span>n_bins<span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">,</span> encode<span class="token operator">=</span><span class="token string">'ordinal'</span><span class="token punctuation">,</span> strategy<span class="token operator">=</span><span class="token string">'kmeans'</span><span class="token punctuation">)</span>
+X_binned <span class="token operator">=</span> kbd<span class="token punctuation">.</span>fit_transform<span class="token punctuation">(</span>X<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">'income'</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+        <hr>
+        <h3 id="-day-33-handling-mixed-variables" tabindex="-1"><a class="anchor"
+                name="-day-33-handling-mixed-variables" tabindex="-1" href="#-day-33-handling-mixed-variables"><span
+                    class="octicon octicon-link"></span></a>✅ <strong>Day 33: Handling Mixed Variables</strong></h3>
+        <h4 id="-mixed-variables--variables-that-are-partly-numeric-and-partly-categorical" tabindex="-1"><a
+                class="anchor" name="-mixed-variables--variables-that-are-partly-numeric-and-partly-categorical"
+                tabindex="-1" href="#-mixed-variables--variables-that-are-partly-numeric-and-partly-categorical"><span
+                    class="octicon octicon-link"></span></a>🔍 Mixed Variables = Variables that are partly numeric and
+            partly categorical</h4>
+        <p>📌 Example:</p>
+        <ul>
+            <li><code>zip_code</code>: Looks numeric but is categorical</li>
+            <li><code>rating</code>: Numeric but used as ordinal (<code>low</code>, <code>medium</code>,
+                <code>high</code> → 1, 2, 3)
+            </li>
+        </ul>
+        <h4 id="-how-to-handle" tabindex="-1"><a class="anchor" name="-how-to-handle" tabindex="-1"
+                href="#-how-to-handle"><span class="octicon octicon-link"></span></a>🧠 How to Handle:</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Case</th>
+                    <th>Solution</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Looks numeric but isn't</td>
+                    <td>Convert to string &amp; apply OneHotEncoding</td>
+                </tr>
+                <tr>
+                    <td>Ordinal categories</td>
+                    <td>Use OrdinalEncoder or custom mapping</td>
+                </tr>
+                <tr>
+                    <td>High cardinality</td>
+                    <td>Use frequency or target encoding (with caution)</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h3 id="-day-34-handling-date-and-time-variables" tabindex="-1"><a class="anchor"
+                name="-day-34-handling-date-and-time-variables" tabindex="-1"
+                href="#-day-34-handling-date-and-time-variables"><span class="octicon octicon-link"></span></a>✅
+            <strong>Day 34: Handling Date and Time Variables</strong>
+        </h3>
+        <h4 id="-steps" tabindex="-1"><a class="anchor" name="-steps" tabindex="-1" href="#-steps"><span
+                    class="octicon octicon-link"></span></a>📅 Steps:</h4>
+        <ol>
+            <li>Convert to datetime:</li>
+        </ol>
+        <pre class="language-python" tabindex="0"><code class="language-python">df<span class="token punctuation">[</span><span class="token string">'date'</span><span class="token punctuation">]</span> <span class="token operator">=</span> pd<span class="token punctuation">.</span>to_datetime<span class="token punctuation">(</span>df<span class="token punctuation">[</span><span class="token string">'date_column'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+        <ol start="2">
+            <li>Extract components:</li>
+        </ol>
+        <pre class="language-python" tabindex="0"><code class="language-python">df<span class="token punctuation">[</span><span class="token string">'year'</span><span class="token punctuation">]</span> <span class="token operator">=</span> df<span class="token punctuation">[</span><span class="token string">'date'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>dt<span class="token punctuation">.</span>year
+df<span class="token punctuation">[</span><span class="token string">'month'</span><span class="token punctuation">]</span> <span class="token operator">=</span> df<span class="token punctuation">[</span><span class="token string">'date'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>dt<span class="token punctuation">.</span>month
+df<span class="token punctuation">[</span><span class="token string">'dayofweek'</span><span class="token punctuation">]</span> <span class="token operator">=</span> df<span class="token punctuation">[</span><span class="token string">'date'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>dt<span class="token punctuation">.</span>dayofweek
+df<span class="token punctuation">[</span><span class="token string">'hour'</span><span class="token punctuation">]</span> <span class="token operator">=</span> df<span class="token punctuation">[</span><span class="token string">'date'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>dt<span class="token punctuation">.</span>hour
+</code></pre>
+        <ol start="3">
+            <li>Compute durations:</li>
+        </ol>
+        <pre class="language-python" tabindex="0"><code class="language-python">df<span class="token punctuation">[</span><span class="token string">'days_since'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">(</span>pd<span class="token punctuation">.</span>to_datetime<span class="token punctuation">(</span><span class="token string">'today'</span><span class="token punctuation">)</span> <span class="token operator">-</span> df<span class="token punctuation">[</span><span class="token string">'date'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">.</span>dt<span class="token punctuation">.</span>days
+</code></pre>
+        <blockquote>
+            <p>🧠 These components are <strong>highly predictive</strong> in time-series and transactional datasets.</p>
+        </blockquote>
+        <hr>
+        <h3 id="-day-35-handling-missing-data--part-1-complete-case-analysis" tabindex="-1"><a class="anchor"
+                name="-day-35-handling-missing-data--part-1-complete-case-analysis" tabindex="-1"
+                href="#-day-35-handling-missing-data--part-1-complete-case-analysis"><span
+                    class="octicon octicon-link"></span></a>✅ <strong>Day 35: Handling Missing Data — Part 1 (Complete
+                Case Analysis)</strong></h3>
+        <h4 id="-techniques" tabindex="-1"><a class="anchor" name="-techniques" tabindex="-1" href="#-techniques"><span
+                    class="octicon octicon-link"></span></a>📌 Techniques:</h4>
+        <ol>
+            <li>
+                <p><strong>Complete Case Analysis (CCA)</strong>:</p>
+                <ul>
+                    <li>Remove rows with missing values</li>
+                    <li>Use when <strong>missingness is small and random</strong></li>
+                </ul>
+            </li>
+        </ol>
+        <pre class="language-python" tabindex="0"><code class="language-python">df_clean <span class="token operator">=</span> df<span class="token punctuation">.</span>dropna<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+        <ol start="2">
+            <li>
+                <p><strong>Pros</strong>:</p>
+                <ul>
+                    <li>Simple</li>
+                    <li>No bias introduced by imputation</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Cons</strong>:</p>
+                <ul>
+                    <li><strong>Loss of data</strong></li>
+                    <li>Can bias the model if data not missing at random</li>
+                </ul>
+            </li>
+        </ol>
+        <blockquote>
+            <p>⚠️ Don’t use if more than <strong>10–15%</strong> of data is lost</p>
+        </blockquote>
+        <hr>
+        <h3 id="-summary-days-2935" tabindex="-1"><a class="anchor" name="-summary-days-2935" tabindex="-1"
+                href="#-summary-days-2935"><span class="octicon octicon-link"></span></a>🔚 Summary (Days 29–35)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Focus</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>29</td>
+                    <td>ML Pipelines with ColumnTransformer</td>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td>Log, Reciprocal, Square Root Transforms</td>
+                </tr>
+                <tr>
+                    <td>31</td>
+                    <td>PowerTransformer: Yeo-Johnson, Box-Cox</td>
+                </tr>
+                <tr>
+                    <td>32</td>
+                    <td>Binning and Binarization</td>
+                </tr>
+                <tr>
+                    <td>33</td>
+                    <td>Mixed Variables (ordinal + weird numerics)</td>
+                </tr>
+                <tr>
+                    <td>34</td>
+                    <td>Date &amp; Time Feature Engineering</td>
+                </tr>
+                <tr>
+                    <td>35</td>
+                    <td>Missing Data Handling – CCA</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <hr>
+        <h2 id="-bhramastra-notes--day-36-to-day-40" tabindex="-1"><a class="anchor"
+                name="-bhramastra-notes--day-36-to-day-40" tabindex="-1"
+                href="#-bhramastra-notes--day-36-to-day-40"><span class="octicon octicon-link"></span></a>🧠 Bhramastra
+            Notes — Day 36 to Day 40</h2>
+        <p>📂 <em>Handling Missing Values (Numerical &amp; Categorical)</em></p>
+        <hr>
+        <h3 id="-day-36-handling-missing-data-numerical--simpleimputer" tabindex="-1"><a class="anchor"
+                name="-day-36-handling-missing-data-numerical--simpleimputer" tabindex="-1"
+                href="#-day-36-handling-missing-data-numerical--simpleimputer"><span
+                    class="octicon octicon-link"></span></a>✅ <strong>Day 36: Handling Missing Data (Numerical) –
+                SimpleImputer</strong></h3>
+        <h4 id="-problem" tabindex="-1"><a class="anchor" name="-problem" tabindex="-1" href="#-problem"><span
+                    class="octicon octicon-link"></span></a>🔍 Problem:</h4>
+        <ul>
+            <li>Missing numerical values (NaN) can break models.</li>
+        </ul>
+        <h4 id="️-strategy" tabindex="-1"><a class="anchor" name="️-strategy" tabindex="-1" href="#️-strategy"><span
+                    class="octicon octicon-link"></span></a>🛠️ Strategy:</h4>
+        <p>Use <strong>SimpleImputer</strong> to fill missing values using:</p>
+        <ul>
+            <li><strong>mean</strong></li>
+            <li><strong>median</strong></li>
+            <li><strong>most_frequent</strong></li>
+            <li><strong>constant</strong></li>
+        </ul>
+        <hr>
+        <h3 id="-example-2" tabindex="-1"><a class="anchor" name="-example-2" tabindex="-1" href="#-example-2"><span
+                    class="octicon octicon-link"></span></a>🔧 Example:</h3>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>impute <span class="token keyword">import</span> SimpleImputer
+
+imputer <span class="token operator">=</span> SimpleImputer<span class="token punctuation">(</span>strategy<span class="token operator">=</span><span class="token string">'mean'</span><span class="token punctuation">)</span>  <span class="token comment"># or 'median'</span>
+X<span class="token punctuation">[</span><span class="token string">'age'</span><span class="token punctuation">]</span> <span class="token operator">=</span> imputer<span class="token punctuation">.</span>fit_transform<span class="token punctuation">(</span>X<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">'age'</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+        <hr>
+        <h3 id="-when-to-use-1" tabindex="-1"><a class="anchor" name="-when-to-use-1" tabindex="-1"
+                href="#-when-to-use-1"><span class="octicon octicon-link"></span></a>🔎 When to Use:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Strategy</th>
+                    <th>When to Use</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>mean</code></td>
+                    <td>Symmetric, no outliers</td>
+                </tr>
+                <tr>
+                    <td><code>median</code></td>
+                    <td>Skewed data or outliers</td>
+                </tr>
+                <tr>
+                    <td><code>constant</code></td>
+                    <td>Business logic (e.g., fill salary = 0)</td>
+                </tr>
+            </tbody>
+        </table>
+        <blockquote>
+            <p>⚠️ Never impute using the mean on categorical variables!</p>
+        </blockquote>
+        <hr>
+        <h3 id="-day-37-handling-missing-data-categorical" tabindex="-1"><a class="anchor"
+                name="-day-37-handling-missing-data-categorical" tabindex="-1"
+                href="#-day-37-handling-missing-data-categorical"><span class="octicon octicon-link"></span></a>✅
+            <strong>Day 37: Handling Missing Data (Categorical)</strong>
+        </h3>
+        <h4 id="-strategy-1-fill-with-most-frequent-value" tabindex="-1"><a class="anchor"
+                name="-strategy-1-fill-with-most-frequent-value" tabindex="-1"
+                href="#-strategy-1-fill-with-most-frequent-value"><span class="octicon octicon-link"></span></a>🧰
+            Strategy 1: Fill with <strong>Most Frequent Value</strong></h4>
+        <pre class="language-python" tabindex="0"><code class="language-python">imputer <span class="token operator">=</span> SimpleImputer<span class="token punctuation">(</span>strategy<span class="token operator">=</span><span class="token string">'most_frequent'</span><span class="token punctuation">)</span>
+X<span class="token punctuation">[</span><span class="token string">'city'</span><span class="token punctuation">]</span> <span class="token operator">=</span> imputer<span class="token punctuation">.</span>fit_transform<span class="token punctuation">(</span>X<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">'city'</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+        <hr>
+        <h4 id="-strategy-2-fill-with-a-new-category-like-missing" tabindex="-1"><a class="anchor"
+                name="-strategy-2-fill-with-a-new-category-like-missing" tabindex="-1"
+                href="#-strategy-2-fill-with-a-new-category-like-missing"><span
+                    class="octicon octicon-link"></span></a>🧰 Strategy 2: Fill with a <strong>New Category</strong>
+            (like "Missing")</h4>
+        <pre class="language-python" tabindex="0"><code class="language-python">X<span class="token punctuation">[</span><span class="token string">'city'</span><span class="token punctuation">]</span> <span class="token operator">=</span> X<span class="token punctuation">[</span><span class="token string">'city'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>fillna<span class="token punctuation">(</span><span class="token string">'Missing'</span><span class="token punctuation">)</span>
+</code></pre>
+        <ul>
+            <li>Useful when <strong>missingness carries meaning</strong> (e.g., no education → maybe unemployed)</li>
+        </ul>
+        <hr>
+        <h3 id="-bonus-add-a-missing-indicator" tabindex="-1"><a class="anchor" name="-bonus-add-a-missing-indicator"
+                tabindex="-1" href="#-bonus-add-a-missing-indicator"><span class="octicon octicon-link"></span></a>✅
+            Bonus: Add a Missing Indicator</h3>
+        <pre class="language-python" tabindex="0"><code class="language-python">X<span class="token punctuation">[</span><span class="token string">'city_missing_flag'</span><span class="token punctuation">]</span> <span class="token operator">=</span> X<span class="token punctuation">[</span><span class="token string">'city'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>isnull<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>astype<span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">)</span>
+</code></pre>
+        <blockquote>
+            <p>Helps models learn if "missingness" itself is predictive.</p>
+        </blockquote>
+        <hr>
+        <h3 id="-day-38-missing-indicator--random-sample-imputation" tabindex="-1"><a class="anchor"
+                name="-day-38-missing-indicator--random-sample-imputation" tabindex="-1"
+                href="#-day-38-missing-indicator--random-sample-imputation"><span
+                    class="octicon octicon-link"></span></a>✅ <strong>Day 38: Missing Indicator + Random Sample
+                Imputation</strong></h3>
+        <hr>
+        <h3 id="-1-missing-indicator-automated-way" tabindex="-1"><a class="anchor"
+                name="-1-missing-indicator-automated-way" tabindex="-1" href="#-1-missing-indicator-automated-way"><span
+                    class="octicon octicon-link"></span></a>📌 1. Missing Indicator (Automated Way)</h3>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>impute <span class="token keyword">import</span> MissingIndicator
+
+indicator <span class="token operator">=</span> MissingIndicator<span class="token punctuation">(</span><span class="token punctuation">)</span>
+missing_flags <span class="token operator">=</span> indicator<span class="token punctuation">.</span>fit_transform<span class="token punctuation">(</span>X<span class="token punctuation">)</span>
+</code></pre>
+        <ul>
+            <li>Adds Boolean flags for all missing columns</li>
+        </ul>
+        <hr>
+        <h3 id="-2-random-sample-imputation" tabindex="-1"><a class="anchor" name="-2-random-sample-imputation"
+                tabindex="-1" href="#-2-random-sample-imputation"><span class="octicon octicon-link"></span></a>📌 2.
+            Random Sample Imputation</h3>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">import</span> random
+
+<span class="token keyword">def</span> <span class="token function">random_sample_impute</span><span class="token punctuation">(</span>df<span class="token punctuation">,</span> variable<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    df<span class="token punctuation">[</span>variable <span class="token operator">+</span> <span class="token string">"_random"</span><span class="token punctuation">]</span> <span class="token operator">=</span> df<span class="token punctuation">[</span>variable<span class="token punctuation">]</span>
+    random_sample <span class="token operator">=</span> df<span class="token punctuation">[</span>variable<span class="token punctuation">]</span><span class="token punctuation">.</span>dropna<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>sample<span class="token punctuation">(</span>df<span class="token punctuation">[</span>variable<span class="token punctuation">]</span><span class="token punctuation">.</span>isnull<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token builtin">sum</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> random_state<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span>
+    random_sample<span class="token punctuation">.</span>index <span class="token operator">=</span> df<span class="token punctuation">[</span>df<span class="token punctuation">[</span>variable<span class="token punctuation">]</span><span class="token punctuation">.</span>isnull<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">.</span>index
+    df<span class="token punctuation">.</span>loc<span class="token punctuation">[</span>df<span class="token punctuation">[</span>variable<span class="token punctuation">]</span><span class="token punctuation">.</span>isnull<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> variable <span class="token operator">+</span> <span class="token string">"_random"</span><span class="token punctuation">]</span> <span class="token operator">=</span> random_sample
+</code></pre>
+        <blockquote>
+            <p>🚀 Keeps data distribution <strong>unchanged</strong> (unlike mean imputation)</p>
+        </blockquote>
+        <hr>
+        <h3 id="-day-39-knn-imputer-multivariate-imputation" tabindex="-1"><a class="anchor"
+                name="-day-39-knn-imputer-multivariate-imputation" tabindex="-1"
+                href="#-day-39-knn-imputer-multivariate-imputation"><span class="octicon octicon-link"></span></a>✅
+            <strong>Day 39: KNN Imputer (Multivariate Imputation)</strong>
+        </h3>
+        <h4 id="-concept" tabindex="-1"><a class="anchor" name="-concept" tabindex="-1" href="#-concept"><span
+                    class="octicon octicon-link"></span></a>📌 Concept:</h4>
+        <ul>
+            <li>Use <strong>K Nearest Neighbors</strong> to predict missing values based on similar rows.</li>
+        </ul>
+        <hr>
+        <h3 id="-example-3" tabindex="-1"><a class="anchor" name="-example-3" tabindex="-1" href="#-example-3"><span
+                    class="octicon octicon-link"></span></a>🔧 Example:</h3>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>impute <span class="token keyword">import</span> KNNImputer
+
+imputer <span class="token operator">=</span> KNNImputer<span class="token punctuation">(</span>n_neighbors<span class="token operator">=</span><span class="token number">5</span><span class="token punctuation">)</span>
+X_imputed <span class="token operator">=</span> imputer<span class="token punctuation">.</span>fit_transform<span class="token punctuation">(</span>X<span class="token punctuation">)</span>
+</code></pre>
+        <h4 id="️-notes" tabindex="-1"><a class="anchor" name="️-notes" tabindex="-1" href="#️-notes"><span
+                    class="octicon octicon-link"></span></a>⚠️ Notes:</h4>
+        <ul>
+            <li><strong>Slower</strong>, needs all numeric input</li>
+            <li>Can overfit or underfit depending on K</li>
+            <li>Useful when values depend on multiple features</li>
+        </ul>
+        <hr>
+        <h3 id="-day-40-mice--iterative-imputer-advanced" tabindex="-1"><a class="anchor"
+                name="-day-40-mice--iterative-imputer-advanced" tabindex="-1"
+                href="#-day-40-mice--iterative-imputer-advanced"><span class="octicon octicon-link"></span></a>✅
+            <strong>Day 40: MICE – Iterative Imputer (Advanced)</strong>
+        </h3>
+        <h4 id="-what-is-mice" tabindex="-1"><a class="anchor" name="-what-is-mice" tabindex="-1"
+                href="#-what-is-mice"><span class="octicon octicon-link"></span></a>🧠 What is MICE?</h4>
+        <ul>
+            <li><strong>Multivariate Imputation by Chained Equations</strong></li>
+            <li>Iteratively models each missing value using a regression model based on other features</li>
+        </ul>
+        <hr>
+        <h3 id="-example-4" tabindex="-1"><a class="anchor" name="-example-4" tabindex="-1" href="#-example-4"><span
+                    class="octicon octicon-link"></span></a>🔧 Example:</h3>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>experimental <span class="token keyword">import</span> enable_iterative_imputer
+<span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>impute <span class="token keyword">import</span> IterativeImputer
+
+imp <span class="token operator">=</span> IterativeImputer<span class="token punctuation">(</span><span class="token punctuation">)</span>
+X_imputed <span class="token operator">=</span> imp<span class="token punctuation">.</span>fit_transform<span class="token punctuation">(</span>X<span class="token punctuation">)</span>
+</code></pre>
+        <hr>
+        <h3 id="-when-to-use-2" tabindex="-1"><a class="anchor" name="-when-to-use-2" tabindex="-1"
+                href="#-when-to-use-2"><span class="octicon octicon-link"></span></a>🔍 When to Use:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Imputer</th>
+                    <th>Best for</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>SimpleImputer</td>
+                    <td>Quick fixes</td>
+                </tr>
+                <tr>
+                    <td>KNNImputer</td>
+                    <td>Data with structure, no multicollinearity</td>
+                </tr>
+                <tr>
+                    <td>IterativeImputer (MICE)</td>
+                    <td>Complex inter-feature relationships</td>
+                </tr>
+            </tbody>
+        </table>
+        <blockquote>
+            <p>🧠 IterativeImputer works like <strong>internal machine learning</strong> to guess missing values!</p>
+        </blockquote>
+        <hr>
+        <h3 id="-summary-days-3640" tabindex="-1"><a class="anchor" name="-summary-days-3640" tabindex="-1"
+                href="#-summary-days-3640"><span class="octicon octicon-link"></span></a>🔚 Summary (Days 36–40)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Focus</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>36</td>
+                    <td>SimpleImputer (Numerical)</td>
+                </tr>
+                <tr>
+                    <td>37</td>
+                    <td>SimpleImputer (Categorical) + Fill with "Missing"</td>
+                </tr>
+                <tr>
+                    <td>38</td>
+                    <td>Missing Indicators &amp; Random Sample Imputation</td>
+                </tr>
+                <tr>
+                    <td>39</td>
+                    <td>KNN Imputation</td>
+                </tr>
+                <tr>
+                    <td>40</td>
+                    <td>MICE – Iterative Imputer (Advanced)</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <hr>
+        <h2 id="-bhramastra-notes--day-41-to-day-45" tabindex="-1"><a class="anchor"
+                name="-bhramastra-notes--day-41-to-day-45" tabindex="-1"
+                href="#-bhramastra-notes--day-41-to-day-45"><span class="octicon octicon-link"></span></a>🧠 Bhramastra
+            Notes — Day 41 to Day 45</h2>
+        <p>📦 <em>Outlier Detection + Feature Construction</em></p>
+        <hr>
+        <h3 id="-day-41-what-are-outliers" tabindex="-1"><a class="anchor" name="-day-41-what-are-outliers"
+                tabindex="-1" href="#-day-41-what-are-outliers"><span class="octicon octicon-link"></span></a>✅
+            <strong>Day 41: What are Outliers?</strong>
+        </h3>
+        <h4 id="-definition" tabindex="-1"><a class="anchor" name="-definition" tabindex="-1" href="#-definition"><span
+                    class="octicon octicon-link"></span></a>📌 Definition:</h4>
+        <p>Outliers are data points that deviate significantly from other observations.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Examples</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Global</td>
+                    <td>Income = ₹1 Cr in a dataset where average = ₹30k</td>
+                </tr>
+                <tr>
+                    <td>Contextual</td>
+                    <td>Height = 5’2 is normal for females, short for males</td>
+                </tr>
+                <tr>
+                    <td>Collective</td>
+                    <td>Multiple incorrect values due to sensor failure</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h3 id="-why-handle-them" tabindex="-1"><a class="anchor" name="-why-handle-them" tabindex="-1"
+                href="#-why-handle-them"><span class="octicon octicon-link"></span></a>🔍 Why handle them?</h3>
+        <ul>
+            <li>They <strong>distort the mean, variance, correlation</strong></li>
+            <li>Can <strong>negatively impact</strong> many ML models (especially linear models)</li>
+        </ul>
+        <hr>
+        <h3 id="-techniques-to-detect-outliers" tabindex="-1"><a class="anchor" name="-techniques-to-detect-outliers"
+                tabindex="-1" href="#-techniques-to-detect-outliers"><span class="octicon octicon-link"></span></a>✅
+            Techniques to <strong>detect</strong> outliers:</h3>
+        <ol>
+            <li><strong>Boxplot</strong></li>
+            <li><strong>Z-score method</strong></li>
+            <li><strong>IQR method</strong></li>
+            <li><strong>Domain knowledge</strong></li>
+        </ol>
+        <hr>
+        <h3 id="-day-42-outlier-detection--z-score-method" tabindex="-1"><a class="anchor"
+                name="-day-42-outlier-detection--z-score-method" tabindex="-1"
+                href="#-day-42-outlier-detection--z-score-method"><span class="octicon octicon-link"></span></a>✅
+            <strong>Day 42: Outlier Detection – Z-Score Method</strong>
+        </h3>
+        <h4 id="️-z-score" tabindex="-1"><a class="anchor" name="️-z-score" tabindex="-1" href="#️-z-score"><span
+                    class="octicon octicon-link"></span></a>⚙️ Z-Score:</h4>
+        <p><strong>Formula:</strong><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            \( Z = \frac{(x - \mu)}{\sigma} \)</p>
+
+        <ul>
+            <li>A <strong>Z-score &gt; 3</strong> or <strong>&lt; -3</strong> is typically an outlier</li>
+        </ul>
+        <hr>
+        <h3 id="-code-1" tabindex="-1"><a class="anchor" name="-code-1" tabindex="-1" href="#-code-1"><span
+                    class="octicon octicon-link"></span></a>🔧 Code:</h3>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">from</span> scipy <span class="token keyword">import</span> stats
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+
+z <span class="token operator">=</span> np<span class="token punctuation">.</span><span class="token builtin">abs</span><span class="token punctuation">(</span>stats<span class="token punctuation">.</span>zscore<span class="token punctuation">(</span>df<span class="token punctuation">[</span><span class="token string">'salary'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+df_clean <span class="token operator">=</span> df<span class="token punctuation">[</span>z <span class="token operator">&lt;</span> <span class="token number">3</span><span class="token punctuation">]</span>
+</code></pre>
+        <h4 id="️-when-to-use-1" tabindex="-1"><a class="anchor" name="️-when-to-use-1" tabindex="-1"
+                href="#️-when-to-use-1"><span class="octicon octicon-link"></span></a>⚠️ When to use:</h4>
+        <ul>
+            <li>Data should be <strong>normally distributed</strong></li>
+            <li>Not robust to <strong>extreme</strong> outliers</li>
+        </ul>
+        <hr>
+        <h3 id="-day-43-outlier-detection--iqr-method" tabindex="-1"><a class="anchor"
+                name="-day-43-outlier-detection--iqr-method" tabindex="-1"
+                href="#-day-43-outlier-detection--iqr-method"><span class="octicon octicon-link"></span></a>✅
+            <strong>Day 43: Outlier Detection – IQR Method</strong>
+        </h3>
+        <h4 id="️-iqr--interquartile-range" tabindex="-1"><a class="anchor" name="️-iqr--interquartile-range"
+                tabindex="-1" href="#️-iqr--interquartile-range"><span class="octicon octicon-link"></span></a>⚙️ IQR =
+            Interquartile Range</h4>
+
+        <p><strong>Formula:</strong><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            \( IQR = Q3 - Q1 \)</p>
+
+        <p><strong>Outlier Range:</strong><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            \( \text{Lower} = Q1 - 1.5 \times IQR \) <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            \( \text{Upper} = Q3 + 1.5 \times IQR \)
+        </p>
+        <hr>
+        <h3 id="-code-2" tabindex="-1"><a class="anchor" name="-code-2" tabindex="-1" href="#-code-2"><span
+                    class="octicon octicon-link"></span></a>🔧 Code:</h3>
+        <pre class="language-python" tabindex="0"><code class="language-python">Q1 <span class="token operator">=</span> df<span class="token punctuation">[</span><span class="token string">'salary'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>quantile<span class="token punctuation">(</span><span class="token number">0.25</span><span class="token punctuation">)</span>
+Q3 <span class="token operator">=</span> df<span class="token punctuation">[</span><span class="token string">'salary'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>quantile<span class="token punctuation">(</span><span class="token number">0.75</span><span class="token punctuation">)</span>
+IQR <span class="token operator">=</span> Q3 <span class="token operator">-</span> Q1
+
+lower <span class="token operator">=</span> Q1 <span class="token operator">-</span> <span class="token number">1.5</span> <span class="token operator">*</span> IQR
+upper <span class="token operator">=</span> Q3 <span class="token operator">+</span> <span class="token number">1.5</span> <span class="token operator">*</span> IQR
+
+df_clean <span class="token operator">=</span> df<span class="token punctuation">[</span><span class="token punctuation">(</span>df<span class="token punctuation">[</span><span class="token string">'salary'</span><span class="token punctuation">]</span> <span class="token operator">&gt;=</span> lower<span class="token punctuation">)</span> <span class="token operator">&amp;</span> <span class="token punctuation">(</span>df<span class="token punctuation">[</span><span class="token string">'salary'</span><span class="token punctuation">]</span> <span class="token operator">&lt;=</span> upper<span class="token punctuation">)</span><span class="token punctuation">]</span>
+</code></pre>
+        <h4 id="-iqr-is-better-than-z-score-for-skewed-data-and-more-robust" tabindex="-1"><a class="anchor"
+                name="-iqr-is-better-than-z-score-for-skewed-data-and-more-robust" tabindex="-1"
+                href="#-iqr-is-better-than-z-score-for-skewed-data-and-more-robust"><span
+                    class="octicon octicon-link"></span></a>🧠 IQR is better than Z-score for <strong>skewed
+                data</strong> and more robust.</h4>
+        <hr>
+        <h3 id="-day-44-percentile-method--winsorization" tabindex="-1"><a class="anchor"
+                name="-day-44-percentile-method--winsorization" tabindex="-1"
+                href="#-day-44-percentile-method--winsorization"><span class="octicon octicon-link"></span></a>✅
+            <strong>Day 44: Percentile Method + Winsorization</strong>
+        </h3>
+        <h4 id="-percentile-method" tabindex="-1"><a class="anchor" name="-percentile-method" tabindex="-1"
+                href="#-percentile-method"><span class="octicon octicon-link"></span></a>📌 Percentile Method:</h4>
+        <p>Drop rows outside 1st and 99th percentile.</p>
+        <pre class="language-python" tabindex="0"><code class="language-python">lower <span class="token operator">=</span> df<span class="token punctuation">[</span><span class="token string">'salary'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>quantile<span class="token punctuation">(</span><span class="token number">0.01</span><span class="token punctuation">)</span>
+upper <span class="token operator">=</span> df<span class="token punctuation">[</span><span class="token string">'salary'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>quantile<span class="token punctuation">(</span><span class="token number">0.99</span><span class="token punctuation">)</span>
+df <span class="token operator">=</span> df<span class="token punctuation">[</span><span class="token punctuation">(</span>df<span class="token punctuation">[</span><span class="token string">'salary'</span><span class="token punctuation">]</span> <span class="token operator">&gt;</span> lower<span class="token punctuation">)</span> <span class="token operator">&amp;</span> <span class="token punctuation">(</span>df<span class="token punctuation">[</span><span class="token string">'salary'</span><span class="token punctuation">]</span> <span class="token operator">&lt;</span> upper<span class="token punctuation">)</span><span class="token punctuation">]</span>
+</code></pre>
+        <hr>
+        <h4 id="️-winsorization" tabindex="-1"><a class="anchor" name="️-winsorization" tabindex="-1"
+                href="#️-winsorization"><span class="octicon octicon-link"></span></a>🛠️ Winsorization:</h4>
+        <p><strong>Cap</strong> values instead of removing.</p>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+<span class="token keyword">from</span> feature_engine<span class="token punctuation">.</span>outliers <span class="token keyword">import</span> Winsorizer
+
+winsor <span class="token operator">=</span> Winsorizer<span class="token punctuation">(</span>capping_method<span class="token operator">=</span><span class="token string">'iqr'</span><span class="token punctuation">,</span> tail<span class="token operator">=</span><span class="token string">'both'</span><span class="token punctuation">,</span> fold<span class="token operator">=</span><span class="token number">1.5</span><span class="token punctuation">,</span> variables<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'salary'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+df <span class="token operator">=</span> winsor<span class="token punctuation">.</span>fit_transform<span class="token punctuation">(</span>df<span class="token punctuation">)</span>
+</code></pre>
+        <ul>
+            <li>Keeps <strong>row count intact</strong></li>
+            <li>Safer for small datasets</li>
+        </ul>
+        <hr>
+        <h3 id="-day-45-feature-construction--feature-splitting" tabindex="-1"><a class="anchor"
+                name="-day-45-feature-construction--feature-splitting" tabindex="-1"
+                href="#-day-45-feature-construction--feature-splitting"><span class="octicon octicon-link"></span></a>✅
+            <strong>Day 45: Feature Construction &amp; Feature Splitting</strong>
+        </h3>
+        <h4 id="-what-is-feature-construction" tabindex="-1"><a class="anchor" name="-what-is-feature-construction"
+                tabindex="-1" href="#-what-is-feature-construction"><span class="octicon octicon-link"></span></a>🎯
+            What is Feature Construction?</h4>
+        <p>Creating new features from existing ones using:</p>
+        <ul>
+            <li>Arithmetic</li>
+            <li>Binning</li>
+            <li>Domain logic</li>
+        </ul>
+        <hr>
+        <h3 id="-examples" tabindex="-1"><a class="anchor" name="-examples" tabindex="-1" href="#-examples"><span
+                    class="octicon octicon-link"></span></a>🔨 Examples:</h3>
+        <pre class="language-python" tabindex="0"><code class="language-python">df<span class="token punctuation">[</span><span class="token string">'bmi'</span><span class="token punctuation">]</span> <span class="token operator">=</span> df<span class="token punctuation">[</span><span class="token string">'weight_kg'</span><span class="token punctuation">]</span> <span class="token operator">/</span> <span class="token punctuation">(</span>df<span class="token punctuation">[</span><span class="token string">'height_m'</span><span class="token punctuation">]</span> <span class="token operator">**</span> <span class="token number">2</span><span class="token punctuation">)</span>
+df<span class="token punctuation">[</span><span class="token string">'income_to_age'</span><span class="token punctuation">]</span> <span class="token operator">=</span> df<span class="token punctuation">[</span><span class="token string">'income'</span><span class="token punctuation">]</span> <span class="token operator">/</span> df<span class="token punctuation">[</span><span class="token string">'age'</span><span class="token punctuation">]</span>
+</code></pre>
+        <hr>
+        <h3 id="-feature-splitting" tabindex="-1"><a class="anchor" name="-feature-splitting" tabindex="-1"
+                href="#-feature-splitting"><span class="octicon octicon-link"></span></a>🔪 Feature Splitting:</h3>
+        <p>Break 1 column into <strong>multiple informative columns</strong>.</p>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token comment"># Date → year, month, weekday</span>
+df<span class="token punctuation">[</span><span class="token string">'year'</span><span class="token punctuation">]</span> <span class="token operator">=</span> df<span class="token punctuation">[</span><span class="token string">'date'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>dt<span class="token punctuation">.</span>year
+df<span class="token punctuation">[</span><span class="token string">'weekday'</span><span class="token punctuation">]</span> <span class="token operator">=</span> df<span class="token punctuation">[</span><span class="token string">'date'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>dt<span class="token punctuation">.</span>dayofweek
+
+<span class="token comment"># Full name → First, Last</span>
+df<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">'first_name'</span><span class="token punctuation">,</span> <span class="token string">'last_name'</span><span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">=</span> df<span class="token punctuation">[</span><span class="token string">'name'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token builtin">str</span><span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token string">' '</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> expand<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+</code></pre>
+        <hr>
+        <h3 id="-why-is-it-powerful" tabindex="-1"><a class="anchor" name="-why-is-it-powerful" tabindex="-1"
+                href="#-why-is-it-powerful"><span class="octicon octicon-link"></span></a>✅ Why is it powerful?</h3>
+        <ul>
+            <li>Turns <strong>messy or unstructured</strong> data into <strong>predictive</strong> insights</li>
+            <li>Useful before dimensionality reduction (PCA), tree models, etc.</li>
+        </ul>
+        <hr>
+        <h3 id="-summary-days-4145" tabindex="-1"><a class="anchor" name="-summary-days-4145" tabindex="-1"
+                href="#-summary-days-4145"><span class="octicon octicon-link"></span></a>🔚 Summary (Days 41–45)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Topic</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>41</td>
+                    <td>What are Outliers &amp; Why handle them</td>
+                </tr>
+                <tr>
+                    <td>42</td>
+                    <td>Z-score Method</td>
+                </tr>
+                <tr>
+                    <td>43</td>
+                    <td>IQR Method</td>
+                </tr>
+                <tr>
+                    <td>44</td>
+                    <td>Percentile &amp; Winsorization</td>
+                </tr>
+                <tr>
+                    <td>45</td>
+                    <td>Feature Construction + Splitting</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+    </div>
+</body>
+
+</html>
