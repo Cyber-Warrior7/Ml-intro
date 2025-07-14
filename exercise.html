@@ -1,0 +1,1455 @@
+<html>
+
+<head>
+    <meta name="color-scheme" content="light dark">
+    <meta charset="UTF-8">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown-dark.min.css"
+        id="_theme">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" id="_prism">
+    <style>
+        .top-center-button {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+
+        .switch-btn {
+            padding: 12px 26px;
+            background: #1f1f1f;
+            color: #0ff;
+            font-weight: bold;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 16px;
+            border: 2px solid #0ff;
+            border-radius: 10px;
+            text-decoration: none;
+            box-shadow: 0 0 10px #0ff88c, 0 0 20px #0ff88c;
+            transition: all 0.3s ease;
+        }
+
+        .switch-btn:hover {
+            box-shadow: 0 0 15px #0ff88c, 0 0 30px #0ff88c;
+            transform: scale(1.05);
+        }
+    </style>
+
+</head>
+
+<body class="_theme-github-dark _color-dark">
+    <div class="top-center-button">
+        <a href="https://cyber-warrior7.github.io/Ml-intro/" class="switch-btn">📒 Back to Notes</a>
+    </div>
+
+    <div id="_html" class="markdown-body" style="visibility: visible;">
+        <p><strong>Section 1: Day 1–10 Exercises</strong>, based <strong>strictly on CampusX’s 100 Days of ML YouTube
+                playlist</strong> content.</p>
+        <hr>
+        <h2 id="-section-1-exercises-for-day-110-campusx-playlist" tabindex="-1"><a class="anchor"
+                name="-section-1-exercises-for-day-110-campusx-playlist" tabindex="-1"
+                href="#-section-1-exercises-for-day-110-campusx-playlist"><span
+                    class="octicon octicon-link"></span></a>✅ Section 1: <strong>Exercises for Day 1–10 (CampusX
+                Playlist)</strong></h2>
+        <blockquote>
+            <p>🎯 Core Topics Covered:</p>
+        </blockquote>
+        <ul>
+            <li>Day 1: Course Structure + Mindset</li>
+            <li>Day 2–3: What is ML, AI, DL?</li>
+            <li>Day 4–5: Types of ML (Supervised, Unsupervised, Reinforcement)</li>
+            <li>Day 6: ML Project Lifecycle</li>
+            <li>Day 7–9: Introduction to Numpy</li>
+            <li>Day 10: Introduction to Pandas</li>
+        </ul>
+        <hr>
+        <h3 id="-part-a-theory-based-exercises" tabindex="-1"><a class="anchor" name="-part-a-theory-based-exercises"
+                tabindex="-1" href="#-part-a-theory-based-exercises"><span class="octicon octicon-link"></span></a>✅
+            PART A: <strong>Theory-Based Exercises</strong></h3>
+        <ol>
+            <li>
+                <p><strong>Define the following in your own words:</strong></p>
+                <ul>
+                    <li>Artificial Intelligence (AI)</li>
+                    <li>Machine Learning (ML)</li>
+                    <li>Deep Learning (DL)</li>
+                    <li>Data Science</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Types of Learning:</strong>
+                    Identify the type of ML (Supervised / Unsupervised / Reinforcement):</p>
+                <ul>
+                    <li>Spam Detection</li>
+                    <li>Netflix Movie Recommendation</li>
+                    <li>Chess-playing bot</li>
+                    <li>Customer Segmentation</li>
+                    <li>Stock Price Prediction</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>ML Project Lifecycle:</strong>
+                    Arrange the ML project phases in order:</p>
+                <pre><code>[Feature Engineering, Problem Definition, Data Cleaning, Model Building, Data Collection, Deployment, Evaluation]
+</code></pre>
+            </li>
+            <li>
+                <p><strong>Numpy Conceptual Questions:</strong></p>
+                <ul>
+                    <li>What are the advantages of using NumPy over Python lists?</li>
+                    <li>What is broadcasting in NumPy?</li>
+                    <li>What is the difference between <code>.reshape()</code> and <code>.ravel()</code>?</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Pandas Conceptual Questions:</strong></p>
+                <ul>
+                    <li>What are Series and DataFrames in Pandas?</li>
+                    <li>How is <code>loc[]</code> different from <code>iloc[]</code>?</li>
+                    <li>What does <code>.isnull().sum()</code> return?</li>
+                </ul>
+            </li>
+        </ol>
+        <hr>
+        <h3 id="-part-b-code-based-exercises" tabindex="-1"><a class="anchor" name="-part-b-code-based-exercises"
+                tabindex="-1" href="#-part-b-code-based-exercises"><span class="octicon octicon-link"></span></a>✅ PART
+            B: <strong>Code-Based Exercises</strong></h3>
+        <blockquote>
+            <p>You should use <strong>Jupyter Notebook or Colab</strong> for these exercises.</p>
+        </blockquote>
+        <h4 id="-numpy-practice" tabindex="-1"><a class="anchor" name="-numpy-practice" tabindex="-1"
+                href="#-numpy-practice"><span class="octicon octicon-link"></span></a>📌 NumPy Practice</h4>
+        <ol start="6">
+            <li>
+                <p>Create the following arrays using NumPy:</p>
+                <ul>
+                    <li>A 1D array of numbers from 0 to 20</li>
+                    <li>A 3x3 matrix with values from 1 to 9</li>
+                    <li>A 5x5 identity matrix</li>
+                </ul>
+            </li>
+            <li>
+                <p>Perform these operations:</p>
+                <ul>
+                    <li>Create two random arrays <code>a</code> and <code>b</code> of shape (3,3)</li>
+                    <li>Add, subtract, and multiply them</li>
+                    <li>Take dot product of <code>a</code> and <code>b</code></li>
+                    <li>Transpose the result</li>
+                </ul>
+            </li>
+            <li>
+                <p>Use broadcasting:</p>
+                <ul>
+                    <li>Add a vector <code>[1, 2, 3]</code> to each row of a (3x3) matrix</li>
+                    <li>Multiply a 1D array by a scalar and a 2D array by a scalar</li>
+                </ul>
+            </li>
+        </ol>
+        <h4 id="-pandas-practice" tabindex="-1"><a class="anchor" name="-pandas-practice" tabindex="-1"
+                href="#-pandas-practice"><span class="octicon octicon-link"></span></a>📌 Pandas Practice</h4>
+        <ol start="9">
+            <li>
+                <p>Create a DataFrame using a dictionary:</p>
+                <pre class="language-python" tabindex="0"><code class="language-python">data <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'Name'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'Vedant'</span><span class="token punctuation">,</span> <span class="token string">'Amit'</span><span class="token punctuation">,</span> <span class="token string">'Sara'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'Age'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">22</span><span class="token punctuation">,</span> <span class="token number">24</span><span class="token punctuation">,</span> <span class="token number">21</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'Marks'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">85</span><span class="token punctuation">,</span> <span class="token number">90</span><span class="token punctuation">,</span> <span class="token number">88</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+                <ul>
+                    <li>Display first 2 rows</li>
+                    <li>Add a new column <code>"Pass"</code> where value is True if Marks &gt; 80</li>
+                    <li>Sort the DataFrame by <code>"Marks"</code> descending</li>
+                </ul>
+            </li>
+            <li>
+                <p>Load a sample CSV (like <code>titanic.csv</code> from seaborn or Kaggle) and:</p>
+            </li>
+        </ol>
+        <ul>
+            <li>Show head, info, and shape</li>
+            <li>Count missing values per column</li>
+            <li>Drop rows with missing values</li>
+            <li>Get average age of passengers</li>
+            <li>Filter rows where <code>Sex == 'female'</code> and <code>Age &lt; 30</code></li>
+        </ul>
+        <hr>
+        <h3 id="-bonus-challenges" tabindex="-1"><a class="anchor" name="-bonus-challenges" tabindex="-1"
+                href="#-bonus-challenges"><span class="octicon octicon-link"></span></a>✅ Bonus Challenges</h3>
+        <ol start="11">
+            <li><strong>Visualize a small NumPy matrix (3×3) as an image using <code>matplotlib.imshow()</code></strong>
+            </li>
+            <li><strong>From your Pandas DataFrame, create a bar chart showing Names vs Marks using
+                    <code>df.plot(kind='bar')</code></strong></li>
+        </ol>
+        <hr>
+        <hr>
+        <h2 id="-section-2-exercises-for-day-1115-campusx-playlist" tabindex="-1"><a class="anchor"
+                name="-section-2-exercises-for-day-1115-campusx-playlist" tabindex="-1"
+                href="#-section-2-exercises-for-day-1115-campusx-playlist"><span
+                    class="octicon octicon-link"></span></a>✅ Section 2: <strong>Exercises for Day 11–15 (CampusX
+                Playlist)</strong></h2>
+        <blockquote>
+            <p>🎯 Core Topics Covered:</p>
+        </blockquote>
+        <ul>
+            <li>Day 11: Pandas Part 2 (Data Cleaning, Handling Missing Values)</li>
+            <li>Day 12: Pandas Part 3 (GroupBy, Sorting, Filtering, Merging)</li>
+            <li>Day 13: Matplotlib Basics</li>
+            <li>Day 14: Seaborn Basics</li>
+            <li>Day 15: Data Analysis Project – IPL Dataset</li>
+        </ul>
+        <hr>
+        <h3 id="-part-a-theory-based-exercises-1" tabindex="-1"><a class="anchor"
+                name="-part-a-theory-based-exercises-1" tabindex="-1" href="#-part-a-theory-based-exercises-1"><span
+                    class="octicon octicon-link"></span></a>✅ PART A: <strong>Theory-Based Exercises</strong></h3>
+        <ol>
+            <li>
+                <p><strong>Short Conceptual Questions:</strong></p>
+                <ul>
+                    <li>What does <code>df.groupby('col')</code> do in Pandas?</li>
+                    <li>What is the difference between <code>merge()</code>, <code>join()</code>, and
+                        <code>concat()</code> in Pandas?
+                    </li>
+                    <li>What are <code>NaN</code> values and how do we handle them?</li>
+                    <li>Explain <code>fig</code>, <code>ax = plt.subplots()</code> — what is <code>fig</code> and what
+                        is <code>ax</code>?</li>
+                    <li>What does <code>seaborn.countplot()</code> show?</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Explain with Example:</strong></p>
+                <p>a. How would you:</p>
+                <ul>
+                    <li>Fill missing values in column <code>'Age'</code> with its mean?</li>
+                    <li>Filter rows where column <code>'Score' &gt; 80</code> and <code>'Gender' == 'Male'</code>?</li>
+                </ul>
+                <p>b. What’s the difference between:</p>
+                <ul>
+                    <li><code>dropna()</code> and <code>fillna()</code></li>
+                    <li><code>sort_values(by='col')</code> and <code>sort_index()</code></li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>True or False:</strong></p>
+                <p>a. Matplotlib can only plot line charts.
+                    b. Seaborn is built on top of matplotlib.
+                    c. <code>groupby()</code> returns a DataFrame directly.
+                    d. Missing values can be filled with both numbers and strings.</p>
+            </li>
+        </ol>
+        <hr>
+        <h3 id="-part-b-code-based-exercises-1" tabindex="-1"><a class="anchor" name="-part-b-code-based-exercises-1"
+                tabindex="-1" href="#-part-b-code-based-exercises-1"><span class="octicon octicon-link"></span></a>✅
+            PART B: <strong>Code-Based Exercises</strong></h3>
+        <blockquote>
+            <p>Use your own dataset (like IPL, Titanic) or create dummy DataFrames</p>
+        </blockquote>
+        <h4 id="-pandas-practice-1" tabindex="-1"><a class="anchor" name="-pandas-practice-1" tabindex="-1"
+                href="#-pandas-practice-1"><span class="octicon octicon-link"></span></a>📌 Pandas Practice</h4>
+        <ol start="4">
+            <li>
+                <p><strong>GroupBy &amp; Aggregation:</strong></p>
+                <ul>
+                    <li>Group the Titanic dataset by <code>'Sex'</code> and get average age</li>
+                    <li>Group by <code>'Pclass'</code> and get survival rate</li>
+                    <li>Sort passengers by <code>'Fare'</code> in descending order</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Merging DataFrames:</strong></p>
+                <p>Create two DataFrames:</p>
+                <pre class="language-python" tabindex="0"><code class="language-python">df1 <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">'ID'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">'Name'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'A'</span><span class="token punctuation">,</span> <span class="token string">'B'</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+df2 <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">'ID'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">'Marks'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">80</span><span class="token punctuation">,</span> <span class="token number">85</span><span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+                <ul>
+                    <li>Merge them on <code>'ID'</code></li>
+                    <li>Try <code>how='left'</code>, <code>how='outer'</code> and compare results</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Handling Missing Data:</strong></p>
+                <ul>
+                    <li>Load dataset (e.g., Titanic)</li>
+                    <li>Count missing values per column</li>
+                    <li>Fill <code>'Age'</code> with median</li>
+                    <li>Drop all rows with any missing values</li>
+                    <li>Fill <code>'Embarked'</code> column with <code>'S'</code> (most frequent)</li>
+                </ul>
+            </li>
+        </ol>
+        <h4 id="-matplotlib--seaborn-practice" tabindex="-1"><a class="anchor" name="-matplotlib--seaborn-practice"
+                tabindex="-1" href="#-matplotlib--seaborn-practice"><span class="octicon octicon-link"></span></a>📌
+            Matplotlib &amp; Seaborn Practice</h4>
+        <ol start="7">
+            <li>
+                <p><strong>Matplotlib Charts:</strong></p>
+                <ul>
+                    <li>Create a pie chart showing % of passengers per <code>'Pclass'</code></li>
+                    <li>Bar chart: average fare per <code>'Pclass'</code></li>
+                    <li>Line chart: sample function <code>y = x² + 3x + 2</code> for <code>x = 0 to 10</code></li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Seaborn Visualizations:</strong></p>
+                <ul>
+                    <li>Plot <code>countplot</code> of <code>'Survived'</code> vs <code>'Sex'</code></li>
+                    <li><code>boxplot</code> of <code>'Age'</code> grouped by <code>'Pclass'</code></li>
+                    <li><code>heatmap</code> of correlation matrix</li>
+                    <li><code>histplot</code> of <code>'Fare'</code></li>
+                </ul>
+            </li>
+        </ol>
+        <hr>
+        <h3 id="-bonus-challenge" tabindex="-1"><a class="anchor" name="-bonus-challenge" tabindex="-1"
+                href="#-bonus-challenge"><span class="octicon octicon-link"></span></a>✅ Bonus Challenge</h3>
+        <ol start="9">
+            <li>
+                <p><strong>IPL Dataset Project Recap:</strong></p>
+                <ul>
+                    <li>
+                        <p>Download the IPL dataset from Day 15 or Kaggle</p>
+                    </li>
+                    <li>
+                        <p>Analyze:</p>
+                        <ul>
+                            <li>Most runs by a batsman</li>
+                            <li>Most wickets by a bowler</li>
+                            <li>Toss-win vs Match-win rate</li>
+                            <li>Most matches in each city</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Visualize top 5 batsmen using <code>barplot</code></p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <hr>
+        <hr>
+        <h2 id="-section-3-exercises-for-day-1620-campusx-playlist" tabindex="-1"><a class="anchor"
+                name="-section-3-exercises-for-day-1620-campusx-playlist" tabindex="-1"
+                href="#-section-3-exercises-for-day-1620-campusx-playlist"><span
+                    class="octicon octicon-link"></span></a>✅ Section 3: <strong>Exercises for Day 16–20 (CampusX
+                Playlist)</strong></h2>
+        <blockquote>
+            <p>🎯 Core Topics Covered:</p>
+        </blockquote>
+        <ul>
+            <li>Day 16: Intro to Scikit-Learn</li>
+            <li>Day 17: Linear Regression Intuition</li>
+            <li>Day 18: Training Linear Regression using sklearn</li>
+            <li>Day 19: Evaluation Metrics (MAE, MSE, RMSE, R²)</li>
+            <li>Day 20: End-to-End Regression Project – Laptop Price Predictor</li>
+        </ul>
+        <hr>
+        <h3 id="-part-a-theory-based-exercises-2" tabindex="-1"><a class="anchor"
+                name="-part-a-theory-based-exercises-2" tabindex="-1" href="#-part-a-theory-based-exercises-2"><span
+                    class="octicon octicon-link"></span></a>✅ PART A: <strong>Theory-Based Exercises</strong></h3>
+        <ol>
+            <li>
+                <p><strong>Short Answer Questions:</strong></p>
+                <ul>
+                    <li>What are the steps in a typical ML workflow using sklearn?</li>
+                    <li>What’s the role of <code>train_test_split()</code>?</li>
+                    <li>What’s the difference between <code>.fit()</code>, <code>.predict()</code>, and
+                        <code>.score()</code> in sklearn?
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Linear Regression:</strong></p>
+                <ul>
+                    <li>What is the hypothesis (equation) of a simple linear regression model?</li>
+                    <li>What does it mean when the slope (coefficient) is negative?</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Evaluation Metrics:</strong></p>
+                <p>Define and explain the difference:</p>
+                <ul>
+                    <li>MAE</li>
+                    <li>MSE</li>
+                    <li>RMSE</li>
+                    <li>R² Score</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>True or False:</strong></p>
+                <p>a. Linear regression works only with one feature
+                    b. R² Score can be negative
+                    c. MAE is more sensitive to outliers than MSE
+                    d. You should scale your target variable in regression</p>
+            </li>
+        </ol>
+        <hr>
+        <h3 id="-part-b-code-based-exercises-2" tabindex="-1"><a class="anchor" name="-part-b-code-based-exercises-2"
+                tabindex="-1" href="#-part-b-code-based-exercises-2"><span class="octicon octicon-link"></span></a>✅
+            PART B: <strong>Code-Based Exercises</strong></h3>
+        <blockquote>
+            <p>Use a real dataset (like <strong>laptop_price.csv</strong> from CampusX GitHub)</p>
+        </blockquote>
+        <ol start="5">
+            <li>
+                <p><strong>Build a Linear Regression Model:</strong></p>
+                <ul>
+                    <li>
+                        <p>Load the dataset</p>
+                    </li>
+                    <li>
+                        <p>Clean and preprocess:</p>
+                        <ul>
+                            <li>Remove duplicates</li>
+                            <li>Handle categorical columns (use <code>pd.get_dummies()</code> or
+                                <code>LabelEncoder</code>)
+                            </li>
+                            <li>Drop unnecessary columns (like <code>Unnamed: 0</code>)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Split data into train and test sets</p>
+                    </li>
+                    <li>
+                        <p>Train <code>LinearRegression()</code> from <code>sklearn.linear_model</code></p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Evaluate the Model:</strong></p>
+                <ul>
+                    <li>
+                        <p>Predict on test data</p>
+                    </li>
+                    <li>
+                        <p>Print:</p>
+                        <ul>
+                            <li>MAE</li>
+                            <li>MSE</li>
+                            <li>RMSE</li>
+                            <li>R² Score</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Interpret what the R² score tells you</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Visualizations:</strong></p>
+                <ul>
+                    <li>Plot <code>y_test</code> vs <code>y_pred</code> as a scatter plot</li>
+                    <li>Plot residuals (difference between true and predicted values)</li>
+                    <li>Histogram of predicted prices</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Feature Impact:</strong></p>
+                <ul>
+                    <li>Check and plot the <code>coef_</code> (coefficients) of the model</li>
+                    <li>Identify which features have the strongest positive and negative impact on price</li>
+                </ul>
+            </li>
+        </ol>
+        <hr>
+        <h3 id="-bonus-challenge-1" tabindex="-1"><a class="anchor" name="-bonus-challenge-1" tabindex="-1"
+                href="#-bonus-challenge-1"><span class="octicon octicon-link"></span></a>✅ Bonus Challenge</h3>
+        <ol start="9">
+            <li>
+                <p><strong>Polynomial Features:</strong></p>
+                <ul>
+                    <li>Try fitting a <code>LinearRegression()</code> with <code>PolynomialFeatures(degree=2)</code>
+                    </li>
+                    <li>Compare R² scores with the simple linear model</li>
+                    <li>Is the performance better or overfitting?</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Train Another Regressor:</strong></p>
+            </li>
+        </ol>
+        <ul>
+            <li>Try <code>RandomForestRegressor()</code> from <code>sklearn.ensemble</code></li>
+            <li>Compare its performance with linear regression</li>
+            <li>Which model performs better and why?</li>
+        </ul>
+        <hr>
+        <hr>
+        <h2 id="-section-4-exercises-for-day-2125-campusx-playlist" tabindex="-1"><a class="anchor"
+                name="-section-4-exercises-for-day-2125-campusx-playlist" tabindex="-1"
+                href="#-section-4-exercises-for-day-2125-campusx-playlist"><span
+                    class="octicon octicon-link"></span></a>✅ Section 4: <strong>Exercises for Day 21–25 (CampusX
+                Playlist)</strong></h2>
+        <blockquote>
+            <p>🎯 Core Topics Covered:</p>
+        </blockquote>
+        <ul>
+            <li>Day 21: Classification Problem Intro</li>
+            <li>Day 22: Logistic Regression Theory</li>
+            <li>Day 23: Training Logistic Regression with Sklearn</li>
+            <li>Day 24: Evaluation Metrics – Accuracy, Precision, Recall, F1</li>
+            <li>Day 25: End-to-End Classification Project – Credit Card Default Prediction</li>
+        </ul>
+        <hr>
+        <h3 id="-part-a-theory-based-exercises-3" tabindex="-1"><a class="anchor"
+                name="-part-a-theory-based-exercises-3" tabindex="-1" href="#-part-a-theory-based-exercises-3"><span
+                    class="octicon octicon-link"></span></a>✅ PART A: <strong>Theory-Based Exercises</strong></h3>
+        <ol>
+            <li>
+                <p><strong>Conceptual Questions:</strong></p>
+                <ul>
+                    <li>What is the main difference between regression and classification?</li>
+                    <li>What is the role of the sigmoid function in logistic regression?</li>
+                    <li>What does a probability output of 0.8 mean for a binary classifier?</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Evaluation Metrics:</strong></p>
+                <p>Explain the following terms with 1–2 lines each:</p>
+                <ul>
+                    <li>True Positive (TP)</li>
+                    <li>False Positive (FP)</li>
+                    <li>False Negative (FN)</li>
+                    <li>True Negative (TN)</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Metric Formulas:</strong></p>
+                <p>Write the formula for:</p>
+                <ul>
+                    <li>Accuracy</li>
+                    <li>Precision</li>
+                    <li>Recall</li>
+                    <li>F1-score</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Interpretation Practice:</strong></p>
+                <p>You built a classifier that outputs the following confusion matrix on 100 test samples:</p>
+                <pre><code>[[50, 10],  
+ [20, 20]]
+</code></pre>
+                <p>Calculate:</p>
+                <ul>
+                    <li>Accuracy</li>
+                    <li>Precision</li>
+                    <li>Recall</li>
+                    <li>F1-score</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>True or False:</strong></p>
+                <p>a. Precision is more important than recall in spam detection
+                    b. Accuracy is always a reliable metric
+                    c. Logistic regression outputs continuous values
+                    d. F1-score is high only when both precision and recall are high</p>
+            </li>
+        </ol>
+        <hr>
+        <h3 id="-part-b-code-based-exercises-3" tabindex="-1"><a class="anchor" name="-part-b-code-based-exercises-3"
+                tabindex="-1" href="#-part-b-code-based-exercises-3"><span class="octicon octicon-link"></span></a>✅
+            PART B: <strong>Code-Based Exercises</strong></h3>
+        <blockquote>
+            <p>Use <strong>credit_card.csv</strong> dataset from CampusX (or similar classification dataset)</p>
+        </blockquote>
+        <ol start="6">
+            <li>
+                <p><strong>Logistic Regression Training:</strong></p>
+                <ul>
+                    <li>Load dataset</li>
+                    <li>Check for missing values</li>
+                    <li>Encode categorical variables if needed</li>
+                    <li>Scale features using <code>StandardScaler</code></li>
+                    <li>Train using <code>LogisticRegression()</code> from <code>sklearn.linear_model</code></li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Model Evaluation:</strong></p>
+                <ul>
+                    <li>
+                        <p>Predict on test set</p>
+                    </li>
+                    <li>
+                        <p>Print:</p>
+                        <ul>
+                            <li>Confusion Matrix</li>
+                            <li>Accuracy</li>
+                            <li>Precision</li>
+                            <li>Recall</li>
+                            <li>F1-score</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Visualize confusion matrix using <code>seaborn.heatmap()</code></p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Classification Report &amp; ROC Curve:</strong></p>
+                <ul>
+                    <li>
+                        <p>Print <code>classification_report()</code></p>
+                    </li>
+                    <li>
+                        <p>Plot ROC Curve and calculate AUC using:</p>
+                        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>metrics <span class="token keyword">import</span> roc_auc_score<span class="token punctuation">,</span> roc_curve
+</code></pre>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Threshold Tuning:</strong></p>
+                <ul>
+                    <li>Get predicted probabilities using <code>model.predict_proba()</code></li>
+                    <li>Change threshold from 0.5 → 0.3 and 0.7</li>
+                    <li>Observe how precision and recall change</li>
+                </ul>
+            </li>
+        </ol>
+        <hr>
+        <h3 id="-bonus-challenge-2" tabindex="-1"><a class="anchor" name="-bonus-challenge-2" tabindex="-1"
+                href="#-bonus-challenge-2"><span class="octicon octicon-link"></span></a>✅ Bonus Challenge</h3>
+        <ol start="10">
+            <li><strong>Compare with Another Classifier:</strong></li>
+        </ol>
+        <ul>
+            <li>Train <code>RandomForestClassifier()</code> on same data</li>
+            <li>Compare its accuracy, precision, recall, and F1 with logistic regression</li>
+            <li>Which performs better and why?</li>
+        </ul>
+        <hr>
+        <hr>
+        <h2 id="-section-5-exercises-for-day-2628-campusx-playlist" tabindex="-1"><a class="anchor"
+                name="-section-5-exercises-for-day-2628-campusx-playlist" tabindex="-1"
+                href="#-section-5-exercises-for-day-2628-campusx-playlist"><span
+                    class="octicon octicon-link"></span></a>✅ Section 5: <strong>Exercises for Day 26–28 (CampusX
+                Playlist)</strong></h2>
+        <blockquote>
+            <p>🎯 Core Topics Covered:</p>
+        </blockquote>
+        <ul>
+            <li>Day 26: Introduction to k-Nearest Neighbors</li>
+            <li>Day 27: Hyperparameter tuning in kNN</li>
+            <li>Day 28: kNN Project – Social Network Ads Classification</li>
+        </ul>
+        <hr>
+        <h3 id="-part-a-theory-based-exercises-4" tabindex="-1"><a class="anchor"
+                name="-part-a-theory-based-exercises-4" tabindex="-1" href="#-part-a-theory-based-exercises-4"><span
+                    class="octicon octicon-link"></span></a>✅ PART A: <strong>Theory-Based Exercises</strong></h3>
+        <ol>
+            <li>
+                <p><strong>Conceptual Questions:</strong></p>
+                <ul>
+                    <li>How does kNN classify a new data point?</li>
+                    <li>What role does the value of <code>k</code> play in model performance?</li>
+                    <li>Why is feature scaling important before applying kNN?</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Explain with an Example:</strong></p>
+                <p>Imagine a 2D plot with red and blue points. A new point lies near mostly red ones.</p>
+                <ul>
+                    <li>What happens if <code>k=1</code>?</li>
+                    <li>What happens if <code>k=15</code>?</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Advantages and Disadvantages of kNN:</strong></p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>👍 Advantages</th>
+                            <th>👎 Disadvantages</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>?</td>
+                            <td>?</td>
+                        </tr>
+                        <tr>
+                            <td>?</td>
+                            <td>?</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p><strong>True or False:</strong></p>
+                <p>a. kNN is a parametric model
+                    b. kNN can work with both classification and regression
+                    c. kNN stores the model parameters after training
+                    d. Manhattan distance is the same as Euclidean distance</p>
+            </li>
+        </ol>
+        <hr>
+        <h3 id="-part-b-code-based-exercises-4" tabindex="-1"><a class="anchor" name="-part-b-code-based-exercises-4"
+                tabindex="-1" href="#-part-b-code-based-exercises-4"><span class="octicon octicon-link"></span></a>✅
+            PART B: <strong>Code-Based Exercises</strong></h3>
+        <blockquote>
+            <p>Use <strong>Social_Network_Ads.csv</strong> from CampusX GitHub or similar dataset</p>
+        </blockquote>
+        <ol start="5">
+            <li>
+                <p><strong>Train a Basic kNN Model:</strong></p>
+                <ul>
+                    <li>Load and clean dataset</li>
+                    <li>Encode categorical variables if any</li>
+                    <li>Scale features using <code>StandardScaler</code></li>
+                    <li>Split data into train and test sets</li>
+                    <li>Train <code>KNeighborsClassifier(n_neighbors=5)</code></li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Model Evaluation:</strong></p>
+                <ul>
+                    <li>Print confusion matrix and classification report</li>
+                    <li>Calculate accuracy, precision, recall, and F1-score</li>
+                    <li>Visualize confusion matrix with <code>seaborn</code></li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Try Different <code>k</code> Values:</strong></p>
+                <ul>
+                    <li>Loop through <code>k = 1 to 20</code></li>
+                    <li>For each <code>k</code>, calculate test accuracy</li>
+                    <li>Plot <code>k</code> vs accuracy</li>
+                    <li>Find optimal <code>k</code> from the plot</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Effect of Distance Metric:</strong></p>
+                <ul>
+                    <li>Try <code>metric='euclidean'</code>, <code>'manhattan'</code>, and <code>'minkowski'</code></li>
+                    <li>Compare results for each</li>
+                    <li>Which metric gives best accuracy?</li>
+                </ul>
+            </li>
+        </ol>
+        <hr>
+        <h3 id="-bonus-challenge-3" tabindex="-1"><a class="anchor" name="-bonus-challenge-3" tabindex="-1"
+                href="#-bonus-challenge-3"><span class="octicon octicon-link"></span></a>✅ Bonus Challenge</h3>
+        <ol start="9">
+            <li>
+                <p><strong>Visualize Decision Boundary (2D):</strong></p>
+                <ul>
+                    <li>Use only 2 features (e.g., Age &amp; Estimated Salary)</li>
+                    <li>Plot decision boundary using <code>matplotlib</code> or
+                        <code>mlxtend.plotting.plot_decision_regions</code>
+                    </li>
+                    <li>Mark test data points and predicted classes</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>GridSearchCV for kNN:</strong></p>
+            </li>
+        </ol>
+        <ul>
+            <li>
+                <p>Use <code>GridSearchCV</code> to tune:</p>
+                <ul>
+                    <li><code>n_neighbors</code>: 1–15</li>
+                    <li><code>metric</code>: [‘euclidean’, ‘manhattan’]</li>
+                </ul>
+            </li>
+            <li>
+                <p>Report best parameters and corresponding accuracy</p>
+            </li>
+        </ul>
+        <hr>
+        <hr>
+        <h2 id="-section-6-exercises-for-day-2935-campusx-playlist" tabindex="-1"><a class="anchor"
+                name="-section-6-exercises-for-day-2935-campusx-playlist" tabindex="-1"
+                href="#-section-6-exercises-for-day-2935-campusx-playlist"><span
+                    class="octicon octicon-link"></span></a>✅ Section 6: <strong>Exercises for Day 29–35 (CampusX
+                Playlist)</strong></h2>
+        <blockquote>
+            <p>🎯 Core Topics Covered:</p>
+        </blockquote>
+        <ul>
+            <li>Day 29: Decision Tree Intuition</li>
+            <li>Day 30: Gini, Entropy, Information Gain</li>
+            <li>Day 31: Training Decision Trees</li>
+            <li>Day 32: Random Forest Intuition</li>
+            <li>Day 33: Training Random Forest</li>
+            <li>Day 34–35: Project – Decision Trees &amp; Random Forest on Titanic Dataset</li>
+        </ul>
+        <hr>
+        <h3 id="-part-a-theory-based-exercises-5" tabindex="-1"><a class="anchor"
+                name="-part-a-theory-based-exercises-5" tabindex="-1" href="#-part-a-theory-based-exercises-5"><span
+                    class="octicon octicon-link"></span></a>✅ PART A: <strong>Theory-Based Exercises</strong></h3>
+        <ol>
+            <li>
+                <p><strong>Core Questions:</strong></p>
+                <ul>
+                    <li>
+                        <p>What is a decision tree and how does it make decisions?</p>
+                    </li>
+                    <li>
+                        <p>Define:</p>
+                        <ul>
+                            <li>Entropy</li>
+                            <li>Gini Impurity</li>
+                            <li>Information Gain</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>What causes a decision tree to overfit?</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Entropy Calculation:</strong></p>
+                <p>Given 10 samples:</p>
+                <ul>
+                    <li>6 belong to Class A</li>
+                    <li>4 belong to Class B
+                        Compute the entropy manually.</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Random Forest Conceptual Questions:</strong></p>
+                <ul>
+                    <li>How does Random Forest reduce variance?</li>
+                    <li>What is bagging and how is it used in Random Forests?</li>
+                    <li>What is the difference between a decision tree and a random forest?</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>True or False:</strong></p>
+                <p>a. A deeper decision tree always performs better.
+                    b. Random Forest uses multiple decision trees to improve accuracy.
+                    c. Entropy = 0 when data is perfectly pure.
+                    d. Random Forests are less prone to overfitting than single trees.</p>
+            </li>
+        </ol>
+        <hr>
+        <h3 id="-part-b-code-based-exercises-5" tabindex="-1"><a class="anchor" name="-part-b-code-based-exercises-5"
+                tabindex="-1" href="#-part-b-code-based-exercises-5"><span class="octicon octicon-link"></span></a>✅
+            PART B: <strong>Code-Based Exercises</strong></h3>
+        <blockquote>
+            <p>Use the <strong>Titanic dataset</strong> (<code>train.csv</code> from Kaggle)</p>
+        </blockquote>
+        <ol start="5">
+            <li>
+                <p><strong>Train a Decision Tree:</strong></p>
+                <ul>
+                    <li>
+                        <p>Load the Titanic dataset</p>
+                    </li>
+                    <li>
+                        <p>Preprocess:</p>
+                        <ul>
+                            <li>Fill missing values (<code>Age</code>, <code>Embarked</code>)</li>
+                            <li>Encode categorical features (<code>Sex</code>, <code>Embarked</code>)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Train a <code>DecisionTreeClassifier</code></p>
+                    </li>
+                    <li>
+                        <p>Use <code>max_depth</code>, <code>min_samples_split</code> and try different values</p>
+                    </li>
+                    <li>
+                        <p>Visualize the tree using <code>plot_tree()</code> or <code>graphviz</code></p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Model Evaluation:</strong></p>
+                <ul>
+                    <li>
+                        <p>Evaluate the model using:</p>
+                        <ul>
+                            <li>Accuracy</li>
+                            <li>Confusion Matrix</li>
+                            <li>Precision, Recall, F1-score</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Plot confusion matrix using <code>seaborn.heatmap</code></p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Train a Random Forest:</strong></p>
+                <ul>
+                    <li>Use <code>RandomForestClassifier(n_estimators=100)</code></li>
+                    <li>Compare accuracy with the decision tree</li>
+                    <li>Plot the top 10 <code>feature_importances_</code></li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Compare Decision Tree vs Random Forest:</strong></p>
+                <ul>
+                    <li>Print train and test accuracy for both models</li>
+                    <li>Which one overfits more and why?</li>
+                    <li>Use cross-validation (<code>cross_val_score</code>) to compare stability</li>
+                </ul>
+            </li>
+        </ol>
+        <hr>
+        <h3 id="-bonus-challenge-4" tabindex="-1"><a class="anchor" name="-bonus-challenge-4" tabindex="-1"
+                href="#-bonus-challenge-4"><span class="octicon octicon-link"></span></a>✅ Bonus Challenge</h3>
+        <ol start="9">
+            <li>
+                <p><strong>Grid Search for Random Forest:</strong></p>
+                <ul>
+                    <li>
+                        <p>Use <code>GridSearchCV</code> to tune:</p>
+                        <ul>
+                            <li><code>n_estimators</code>: [50, 100, 200]</li>
+                            <li><code>max_depth</code>: [5, 10, 15]</li>
+                            <li><code>criterion</code>: [‘gini’, ‘entropy’]</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Report best parameters and accuracy</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Visual Explanation of Information Gain:</strong></p>
+            </li>
+        </ol>
+        <ul>
+            <li>
+                <p>Write Python functions to compute:</p>
+                <ul>
+                    <li>Entropy of a list</li>
+                    <li>Information gain from a split</li>
+                </ul>
+            </li>
+            <li>
+                <p>Apply to a tiny dataset manually</p>
+            </li>
+        </ul>
+        <hr>
+        <hr>
+        <h2 id="-section-7-exercises-for-day-3640-campusx-playlist" tabindex="-1"><a class="anchor"
+                name="-section-7-exercises-for-day-3640-campusx-playlist" tabindex="-1"
+                href="#-section-7-exercises-for-day-3640-campusx-playlist"><span
+                    class="octicon octicon-link"></span></a>✅ Section 7: <strong>Exercises for Day 36–40 (CampusX
+                Playlist)</strong></h2>
+        <blockquote>
+            <p>🎯 Core Topics Covered:</p>
+        </blockquote>
+        <ul>
+            <li>Day 36: Naive Bayes Intuition (Bayes Theorem, Conditional Probability)</li>
+            <li>Day 37: Gaussian Naive Bayes (Coding)</li>
+            <li>Day 38: SVM Intuition (Hyperplanes, Margins)</li>
+            <li>Day 39: Linear SVM (Coding)</li>
+            <li>Day 40: Project – Cancer Detection with Naive Bayes and SVM</li>
+        </ul>
+        <hr>
+        <h3 id="-part-a-theory-based-exercises-6" tabindex="-1"><a class="anchor"
+                name="-part-a-theory-based-exercises-6" tabindex="-1" href="#-part-a-theory-based-exercises-6"><span
+                    class="octicon octicon-link"></span></a>✅ PART A: <strong>Theory-Based Exercises</strong></h3>
+        <ol>
+            <li>
+                <p><strong>Bayes Theorem &amp; Naive Bayes:</strong></p>
+                <ul>
+                    <li>State Bayes’ Theorem with definitions of each term.</li>
+                    <li>What is the “naive” assumption in Naive Bayes?</li>
+                    <li>Difference between <strong>prior</strong>, <strong>likelihood</strong>, and
+                        <strong>posterior</strong>?
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>SVM Concepts:</strong></p>
+                <ul>
+                    <li>What is the margin in SVM, and why do we want to maximize it?</li>
+                    <li>What are support vectors?</li>
+                    <li>What happens if the data is not linearly separable?</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Comparison:</strong></p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Concept</th>
+                            <th>Naive Bayes</th>
+                            <th>Support Vector Machine (SVM)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Type of algorithm</td>
+                            <td>?</td>
+                            <td>?</td>
+                        </tr>
+                        <tr>
+                            <td>Handles high-dim data</td>
+                            <td>?</td>
+                            <td>?</td>
+                        </tr>
+                        <tr>
+                            <td>Sensitive to scaling</td>
+                            <td>?</td>
+                            <td>?</td>
+                        </tr>
+                        <tr>
+                            <td>Probability Output</td>
+                            <td>?</td>
+                            <td>?</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p><strong>True or False:</strong></p>
+                <p>a. Naive Bayes works poorly with text classification.
+                    b. SVM only works for binary classification.
+                    c. A hard margin SVM does not allow any misclassification.
+                    d. Naive Bayes assumes feature independence.</p>
+            </li>
+        </ol>
+        <hr>
+        <h3 id="-part-b-code-based-exercises-6" tabindex="-1"><a class="anchor" name="-part-b-code-based-exercises-6"
+                tabindex="-1" href="#-part-b-code-based-exercises-6"><span class="octicon octicon-link"></span></a>✅
+            PART B: <strong>Code-Based Exercises</strong></h3>
+        <blockquote>
+            <p>Use the <strong>Breast Cancer Dataset</strong> from <code>sklearn.datasets.load_breast_cancer()</code>
+            </p>
+        </blockquote>
+        <ol start="5">
+            <li>
+                <p><strong>Naive Bayes Classifier (Cancer Detection):</strong></p>
+                <ul>
+                    <li>
+                        <p>Load the dataset using sklearn</p>
+                    </li>
+                    <li>
+                        <p>Preprocess using <code>StandardScaler</code> (optional for NB)</p>
+                    </li>
+                    <li>
+                        <p>Train a <code>GaussianNB()</code> model</p>
+                    </li>
+                    <li>
+                        <p>Print:</p>
+                        <ul>
+                            <li>Accuracy</li>
+                            <li>Confusion matrix</li>
+                            <li>Classification report</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Support Vector Machine (Linear Kernel):</strong></p>
+                <ul>
+                    <li>Use <code>SVC(kernel='linear')</code></li>
+                    <li>Scale data with <code>StandardScaler</code> before training</li>
+                    <li>Evaluate using accuracy, confusion matrix, and F1-score</li>
+                    <li>Visualize confusion matrix using <code>seaborn.heatmap</code></li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Compare NB vs SVM:</strong></p>
+                <ul>
+                    <li>Train/test accuracy of both models</li>
+                    <li>Classification report (Precision, Recall, F1-score)</li>
+                    <li>Which one performs better and why?</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Decision Boundary (2D Data):</strong></p>
+                <ul>
+                    <li>Select only 2 features from the dataset</li>
+                    <li>Train SVM and plot decision boundary using <code>matplotlib</code> or
+                        <code>plot_decision_regions</code>
+                    </li>
+                    <li>Highlight support vectors</li>
+                </ul>
+            </li>
+        </ol>
+        <hr>
+        <h3 id="-bonus-challenge-5" tabindex="-1"><a class="anchor" name="-bonus-challenge-5" tabindex="-1"
+                href="#-bonus-challenge-5"><span class="octicon octicon-link"></span></a>✅ Bonus Challenge</h3>
+        <ol start="9">
+            <li>
+                <p><strong>Try Non-linear Kernel:</strong></p>
+                <ul>
+                    <li>Train <code>SVC(kernel='rbf', C=1.0, gamma='scale')</code></li>
+                    <li>Compare with linear kernel performance</li>
+                    <li>Plot accuracy vs C (try C from 0.01 to 100)</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Pipeline Integration:</strong></p>
+            </li>
+        </ol>
+        <ul>
+            <li>
+                <p>Build an ML pipeline with:</p>
+                <ul>
+                    <li><code>StandardScaler()</code></li>
+                    <li><code>SVC()</code></li>
+                </ul>
+            </li>
+            <li>
+                <p>Use <code>Pipeline()</code> from sklearn</p>
+            </li>
+            <li>
+                <p>Evaluate it using <code>cross_val_score</code></p>
+            </li>
+        </ul>
+        <hr>
+        <hr>
+        <h2 id="-section-8-exercises-for-day-4145-campusx-playlist" tabindex="-1"><a class="anchor"
+                name="-section-8-exercises-for-day-4145-campusx-playlist" tabindex="-1"
+                href="#-section-8-exercises-for-day-4145-campusx-playlist"><span
+                    class="octicon octicon-link"></span></a>✅ Section 8: <strong>Exercises for Day 41–45 (CampusX
+                Playlist)</strong></h2>
+        <blockquote>
+            <p>🎯 Core Topics Covered:</p>
+        </blockquote>
+        <ul>
+            <li>Day 41: Principal Component Analysis (PCA) Intuition</li>
+            <li>Day 42: PCA in Practice</li>
+            <li>Day 43: KMeans Clustering Intuition</li>
+            <li>Day 44: KMeans with Elbow and Silhouette Method</li>
+            <li>Day 45: Project – Image Compression using PCA</li>
+        </ul>
+        <hr>
+        <h3 id="-part-a-theory-based-exercises-7" tabindex="-1"><a class="anchor"
+                name="-part-a-theory-based-exercises-7" tabindex="-1" href="#-part-a-theory-based-exercises-7"><span
+                    class="octicon octicon-link"></span></a>✅ PART A: <strong>Theory-Based Exercises</strong></h3>
+        <ol>
+            <li>
+                <p><strong>PCA Concepts:</strong></p>
+                <ul>
+                    <li>What is the goal of PCA?</li>
+                    <li>How is PCA different from feature selection?</li>
+                    <li>What is explained variance ratio?</li>
+                    <li>Why should we standardize data before applying PCA?</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>KMeans Concepts:</strong></p>
+                <ul>
+                    <li>
+                        <p>What is the objective of KMeans clustering?</p>
+                    </li>
+                    <li>
+                        <p>Define:</p>
+                        <ul>
+                            <li>Inertia</li>
+                            <li>Elbow Method</li>
+                            <li>Silhouette Score</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>How does KMeans assign data points to clusters?</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Interpret &amp; Explain:</strong></p>
+                <ul>
+                    <li>
+                        <p>PCA gives explained variance ratios: <code>[0.5, 0.3, 0.1, 0.1]</code>
+                            → How many components are needed to retain 90% variance?</p>
+                    </li>
+                    <li>
+                        <p>You run KMeans with k=1 to 10 and get this inertia plot:
+                            <code>k=3</code> shows a sharp bend — what should be your optimal cluster count?
+                        </p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>True or False:</strong></p>
+                <p>a. PCA is a supervised algorithm.
+                    b. KMeans works well even for non-spherical clusters.
+                    c. PCA can help improve model training speed.
+                    d. The silhouette score ranges from -1 to 1.</p>
+            </li>
+        </ol>
+        <hr>
+        <h3 id="-part-b-code-based-exercises-7" tabindex="-1"><a class="anchor" name="-part-b-code-based-exercises-7"
+                tabindex="-1" href="#-part-b-code-based-exercises-7"><span class="octicon octicon-link"></span></a>✅
+            PART B: <strong>Code-Based Exercises</strong></h3>
+        <blockquote>
+            <p>Use <strong>Iris Dataset</strong>, <strong>Wine Dataset</strong>, or <strong>Digits Dataset</strong></p>
+        </blockquote>
+        <ol start="5">
+            <li>
+                <p><strong>Apply PCA on a Dataset:</strong></p>
+                <ul>
+                    <li>Load <code>sklearn.datasets.load_wine()</code></li>
+                    <li>Standardize using <code>StandardScaler()</code></li>
+                    <li>Apply <code>PCA(n_components=2)</code></li>
+                    <li>Plot the 2D data using <code>matplotlib.scatter()</code></li>
+                    <li>Color by target class</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Explained Variance Analysis:</strong></p>
+                <ul>
+                    <li>Use <code>explained_variance_ratio_</code></li>
+                    <li>Plot cumulative explained variance</li>
+                    <li>Choose number of components to retain 95% variance</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>KMeans Clustering:</strong></p>
+                <ul>
+                    <li>
+                        <p>Load same dataset (without labels)</p>
+                    </li>
+                    <li>
+                        <p>Use <code>KMeans(n_clusters=3)</code></p>
+                    </li>
+                    <li>
+                        <p>Predict cluster labels</p>
+                    </li>
+                    <li>
+                        <p>Compare with actual labels using:</p>
+                        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>metrics <span class="token keyword">import</span> adjusted_rand_score
+</code></pre>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Elbow and Silhouette Method:</strong></p>
+                <ul>
+                    <li>
+                        <p>Loop over <code>k=1 to 10</code></p>
+                    </li>
+                    <li>
+                        <p>For each <code>k</code>, calculate:</p>
+                        <ul>
+                            <li>Inertia</li>
+                            <li>Silhouette Score</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Plot both and choose best k</p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <hr>
+        <h3 id="-bonus-challenge-6" tabindex="-1"><a class="anchor" name="-bonus-challenge-6" tabindex="-1"
+                href="#-bonus-challenge-6"><span class="octicon octicon-link"></span></a>✅ Bonus Challenge</h3>
+        <ol start="9">
+            <li>
+                <p><strong>Image Compression with PCA:</strong></p>
+                <ul>
+                    <li>Load grayscale image using <code>skimage.io.imread()</code></li>
+                    <li>Apply PCA with 10, 50, and 100 components</li>
+                    <li>Reconstruct and plot images</li>
+                    <li>Compare compressed images visually</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Combine PCA + KMeans:</strong></p>
+            </li>
+        </ol>
+        <ul>
+            <li>Reduce a dataset to 2D using PCA</li>
+            <li>Apply <code>KMeans(n_clusters=3)</code> on reduced data</li>
+            <li>Plot clusters with different colors</li>
+        </ul>
+        <hr>
+        <hr>
+        <h2 id="-section-9-exercises-for-day-4650-campusx-playlist" tabindex="-1"><a class="anchor"
+                name="-section-9-exercises-for-day-4650-campusx-playlist" tabindex="-1"
+                href="#-section-9-exercises-for-day-4650-campusx-playlist"><span
+                    class="octicon octicon-link"></span></a>✅ Section 9: <strong>Exercises for Day 46–50 (CampusX
+                Playlist)</strong></h2>
+        <blockquote>
+            <p>🎯 Core Topics Covered:</p>
+        </blockquote>
+        <ul>
+            <li>Day 46: Model Selection &amp; Evaluation Techniques</li>
+            <li>Day 47: Cross Validation</li>
+            <li>Day 48: Bias-Variance Tradeoff (Practical)</li>
+            <li>Day 49: GridSearchCV (Hyperparameter Tuning)</li>
+            <li>Day 50: RandomizedSearchCV, Pipelines &amp; Final Project Wrap-up</li>
+        </ul>
+        <hr>
+        <h3 id="-part-a-theory-based-exercises-8" tabindex="-1"><a class="anchor"
+                name="-part-a-theory-based-exercises-8" tabindex="-1" href="#-part-a-theory-based-exercises-8"><span
+                    class="octicon octicon-link"></span></a>✅ PART A: <strong>Theory-Based Exercises</strong></h3>
+        <ol>
+            <li>
+                <p><strong>Core Concepts:</strong></p>
+                <ul>
+                    <li>
+                        <p>What is the purpose of model selection?</p>
+                    </li>
+                    <li>
+                        <p>Define:</p>
+                        <ul>
+                            <li>Overfitting</li>
+                            <li>Underfitting</li>
+                            <li>Cross-validation</li>
+                            <li>Hyperparameter tuning</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>How does KFold cross-validation help reduce bias?</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Bias-Variance Intuition:</strong></p>
+                <ul>
+                    <li>Explain the bias-variance tradeoff with one sentence each</li>
+                    <li>What does high bias and low variance indicate?</li>
+                    <li>What does low bias and high variance indicate?</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Evaluation Techniques:</strong></p>
+                <ul>
+                    <li>
+                        <p>What’s the difference between:</p>
+                        <ul>
+                            <li><code>train_test_split()</code> vs <code>cross_val_score()</code></li>
+                            <li><code>GridSearchCV</code> vs <code>RandomizedSearchCV</code></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Why is pipeline useful in ML model training?</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>True or False:</strong></p>
+                <p>a. Cross-validation increases the risk of overfitting
+                    b. GridSearchCV tries all possible hyperparameter combinations
+                    c. RandomizedSearchCV is faster than GridSearchCV
+                    d. You must scale data before cross-validation begins</p>
+            </li>
+        </ol>
+        <hr>
+        <h3 id="-part-b-code-based-exercises-8" tabindex="-1"><a class="anchor" name="-part-b-code-based-exercises-8"
+                tabindex="-1" href="#-part-b-code-based-exercises-8"><span class="octicon octicon-link"></span></a>✅
+            PART B: <strong>Code-Based Exercises</strong></h3>
+        <blockquote>
+            <p>Use any ML project dataset (Titanic, Cancer, Laptop Price, etc.)</p>
+        </blockquote>
+        <ol start="5">
+            <li>
+                <p><strong>K-Fold Cross-Validation:</strong></p>
+                <ul>
+                    <li>
+                        <p>Load and preprocess your dataset</p>
+                    </li>
+                    <li>
+                        <p>Train a <code>LogisticRegression()</code> or <code>RandomForestClassifier()</code></p>
+                    </li>
+                    <li>
+                        <p>Use:</p>
+                        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>model_selection <span class="token keyword">import</span> cross_val_score
+</code></pre>
+                        <ul>
+                            <li>Run with <code>cv=5</code> and print average accuracy</li>
+                            <li>Try <code>StratifiedKFold</code> and compare scores</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>GridSearchCV:</strong></p>
+                <ul>
+                    <li>
+                        <p>Build a model (e.g., <code>SVC()</code>, <code>RandomForestClassifier</code>)</p>
+                    </li>
+                    <li>
+                        <p>Define param grid:</p>
+                        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token punctuation">{</span><span class="token string">'C'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">0.1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">'kernel'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'linear'</span><span class="token punctuation">,</span> <span class="token string">'rbf'</span><span class="token punctuation">]</span><span class="token punctuation">}</span>
+</code></pre>
+                    </li>
+                    <li>
+                        <p>Use <code>GridSearchCV()</code> with <code>cv=5</code></p>
+                    </li>
+                    <li>
+                        <p>Print:</p>
+                        <ul>
+                            <li>Best parameters</li>
+                            <li>Best score</li>
+                            <li>Time taken (optional)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>RandomizedSearchCV:</strong></p>
+                <ul>
+                    <li>
+                        <p>Use the same model</p>
+                    </li>
+                    <li>
+                        <p>Import:</p>
+                        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>model_selection <span class="token keyword">import</span> RandomizedSearchCV
+</code></pre>
+                    </li>
+                    <li>
+                        <p>Use a larger range for params (e.g., <code>n_estimators</code>, <code>max_depth</code>)</p>
+                    </li>
+                    <li>
+                        <p>Compare time and score with GridSearchCV</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Pipeline Creation:</strong></p>
+                <ul>
+                    <li>
+                        <p>Build a pipeline with:</p>
+                        <ul>
+                            <li><code>StandardScaler()</code></li>
+                            <li>Classifier (e.g., <code>SVC()</code> or <code>LogisticRegression</code>)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Use:</p>
+                        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>pipeline <span class="token keyword">import</span> Pipeline
+</code></pre>
+                    </li>
+                    <li>
+                        <p>Apply <code>GridSearchCV</code> on the pipeline</p>
+                    </li>
+                    <li>
+                        <p>Report results</p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <hr>
+        <h3 id="-bonus-challenge-7" tabindex="-1"><a class="anchor" name="-bonus-challenge-7" tabindex="-1"
+                href="#-bonus-challenge-7"><span class="octicon octicon-link"></span></a>✅ Bonus Challenge</h3>
+        <ol start="9">
+            <li>
+                <p><strong>Plot Cross-Validation Scores:</strong></p>
+                <ul>
+                    <li>Create a plot of accuracy vs different <code>C</code> values for
+                        <code>LogisticRegression()</code>
+                    </li>
+                    <li>Use cross-validation accuracy as Y-axis</li>
+                    <li>Identify the value of C with best generalization</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>Custom Scoring Metric:</strong></p>
+            </li>
+        </ol>
+        <ul>
+            <li>Define a custom scoring function (e.g., F1 for class 1 only)</li>
+            <li>Use it in <code>GridSearchCV</code> using <code>make_scorer</code></li>
+            <li>Print best params based on custom scoring</li>
+        </ul>
+        <hr>
+    </div>
+</body>
+
+</html>
