@@ -11,9 +11,42 @@
         id="_theme">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" id="_prism">
+    <style>
+        .top-center-button {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+
+        .switch-btn {
+            padding: 12px 26px;
+            background: #1f1f1f;
+            color: #0ff;
+            font-weight: bold;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 16px;
+            border: 2px solid #0ff;
+            border-radius: 10px;
+            text-decoration: none;
+            box-shadow: 0 0 10px #0ff88c, 0 0 20px #0ff88c;
+            transition: all 0.3s ease;
+        }
+
+        .switch-btn:hover {
+            box-shadow: 0 0 15px #0ff88c, 0 0 30px #0ff88c;
+            transform: scale(1.05);
+        }
+    </style>
+
 </head>
 
 <body class="_theme-github-dark _color-dark">
+    <div class="top-center-button">
+        <a href="exercise.html" class="switch-btn">🔁 Switch to Exercises</a>
+    </div>
+
+
     <div id="_html" class="markdown-body" style="visibility: visible;">
         <h2 id="-bhramastra-notes--day-1-to-day-10" tabindex="-1"><a class="anchor"
                 name="-bhramastra-notes--day-1-to-day-10" tabindex="-1" href="#-bhramastra-notes--day-1-to-day-10"><span
@@ -2020,6 +2053,475 @@ df<span class="token punctuation">[</span><span class="token punctuation">[</spa
                 <tr>
                     <td>45</td>
                     <td>Feature Construction + Splitting</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <p>Excellent! Let’s now dive into <strong>Dimensionality Reduction</strong> and kickstart your <strong>first
+                real ML model — Linear Regression</strong>.</p>
+        <p>Here’s your detailed <strong>Bhramastra Notes</strong> for <strong>Day 46 to Day 50</strong> from CampusX’s
+            <em>100 Days of Machine Learning</em>.
+        </p>
+        <hr>
+        <h2 id="-bhramastra-notes--day-46-to-day-50" tabindex="-1"><a class="anchor"
+                name="-bhramastra-notes--day-46-to-day-50" tabindex="-1"
+                href="#-bhramastra-notes--day-46-to-day-50"><span class="octicon octicon-link"></span></a>🧠 Bhramastra
+            Notes — Day 46 to Day 50</h2>
+        <p>📉 <em>Dimensionality Reduction + Regression Kickoff</em></p>
+        <hr>
+        <h3 id="-day-46-curse-of-dimensionality" tabindex="-1"><a class="anchor" name="-day-46-curse-of-dimensionality"
+                tabindex="-1" href="#-day-46-curse-of-dimensionality"><span class="octicon octicon-link"></span></a>✅
+            <strong>Day 46: Curse of Dimensionality</strong>
+        </h3>
+        <h4 id="-what-is-it-1" tabindex="-1"><a class="anchor" name="-what-is-it-1" tabindex="-1"
+                href="#-what-is-it-1"><span class="octicon octicon-link"></span></a>🎯 What is it?</h4>
+        <p>As the number of features (dimensions) increases:</p>
+        <ul>
+            <li><strong>Data becomes sparse</strong></li>
+            <li><strong>Distance-based algorithms fail</strong></li>
+            <li><strong>Overfitting increases</strong></li>
+        </ul>
+        <hr>
+        <h3 id="-example-5" tabindex="-1"><a class="anchor" name="-example-5" tabindex="-1" href="#-example-5"><span
+                    class="octicon octicon-link"></span></a>📊 Example:</h3>
+        <p>In 2D: distance is meaningful.
+            In 100D: all distances become almost <strong>equal</strong>, losing meaning.</p>
+        <h4 id="-effects" tabindex="-1"><a class="anchor" name="-effects" tabindex="-1" href="#-effects"><span
+                    class="octicon octicon-link"></span></a>💥 Effects:</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Problem</th>
+                    <th>Caused by</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Overfitting</td>
+                    <td>Too many irrelevant features</td>
+                </tr>
+                <tr>
+                    <td>Computational cost</td>
+                    <td>More features = more complexity</td>
+                </tr>
+                <tr>
+                    <td>Poor generalization</td>
+                    <td>Models memorize noise</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h3 id="-solution" tabindex="-1"><a class="anchor" name="-solution" tabindex="-1" href="#-solution"><span
+                    class="octicon octicon-link"></span></a>✅ Solution:</h3>
+        <p>Use <strong>Dimensionality Reduction</strong> like PCA, feature selection, etc.</p>
+        <blockquote>
+            <p>💡 Always remove <strong>low-variance or irrelevant</strong> features before modeling.</p>
+        </blockquote>
+        <hr>
+        <h3 id="-day-47-pca--principal-component-analysis-part-1-geometric-intuition" tabindex="-1"><a class="anchor"
+                name="-day-47-pca--principal-component-analysis-part-1-geometric-intuition" tabindex="-1"
+                href="#-day-47-pca--principal-component-analysis-part-1-geometric-intuition"><span
+                    class="octicon octicon-link"></span></a>✅ <strong>Day 47: PCA – Principal Component Analysis (Part
+                1: Geometric Intuition)</strong></h3>
+        <h4 id="-what-is-pca" tabindex="-1"><a class="anchor" name="-what-is-pca" tabindex="-1"
+                href="#-what-is-pca"><span class="octicon octicon-link"></span></a>🎯 What is PCA?</h4>
+        <p>A linear technique to reduce feature space by projecting data to <strong>new axes</strong> (principal
+            components) that:</p>
+        <ul>
+            <li>Capture <strong>maximum variance</strong></li>
+            <li>Are <strong>orthogonal</strong> (uncorrelated)</li>
+        </ul>
+        <hr>
+        <h3 id="-idea" tabindex="-1"><a class="anchor" name="-idea" tabindex="-1" href="#-idea"><span
+                    class="octicon octicon-link"></span></a>📈 Idea:</h3>
+        <ul>
+            <li>Rotate coordinate axes</li>
+            <li>Drop least-informative dimensions (PC3, PC4, etc.)</li>
+            <li>Keep only top-K components</li>
+        </ul>
+        <h4 id="-geometrically" tabindex="-1"><a class="anchor" name="-geometrically" tabindex="-1"
+                href="#-geometrically"><span class="octicon octicon-link"></span></a>📌 Geometrically:</h4>
+        <p>PCA finds a new "viewpoint" where:</p>
+        <ul>
+            <li>1st component = direction of highest variance</li>
+            <li>2nd component = next most variance, perpendicular to 1st</li>
+        </ul>
+        <hr>
+        <h3 id="-day-48-pca--mathematical-steps-part-2" tabindex="-1"><a class="anchor"
+                name="-day-48-pca--mathematical-steps-part-2" tabindex="-1"
+                href="#-day-48-pca--mathematical-steps-part-2"><span class="octicon octicon-link"></span></a>✅
+            <strong>Day 48: PCA – Mathematical Steps (Part 2)</strong>
+        </h3>
+        <h4 id="-pca-step-by-step" tabindex="-1"><a class="anchor" name="-pca-step-by-step" tabindex="-1"
+                href="#-pca-step-by-step"><span class="octicon octicon-link"></span></a>📐 PCA Step-by-Step:</h4>
+        <p><strong>Standardize Data:</strong><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            \( z = \frac{x - \mu}{\sigma} \)</p>
+
+        <p><strong>Compute Covariance Matrix:</strong><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            \( \text{Cov}(X) = \frac{1}{n-1} (X^T \cdot X) \)</p>
+
+        <ol start="3">
+            <li>
+                <p><strong>Find Eigenvalues &amp; Eigenvectors</strong></p>
+            </li>
+            <li>
+                <p><strong>Sort Eigenvectors by Eigenvalue (variance explained)</strong></p>
+            </li>
+            <li>
+                <p><strong>Project Data</strong> onto top K eigenvectors</p>
+            </li>
+        </ol>
+        <p><strong>Project Data onto New Feature Space:</strong><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            \( Z = X \cdot W_k \)</p>
+
+        <hr>
+        <h3 id="-explained-variance-ratio-evr" tabindex="-1"><a class="anchor" name="-explained-variance-ratio-evr"
+                tabindex="-1" href="#-explained-variance-ratio-evr"><span class="octicon octicon-link"></span></a>📈
+            Explained Variance Ratio (EVR):</h3>
+        <p>Tells how much variance each component explains</p>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>decomposition <span class="token keyword">import</span> PCA
+
+pca <span class="token operator">=</span> PCA<span class="token punctuation">(</span><span class="token punctuation">)</span>
+pca<span class="token punctuation">.</span>fit<span class="token punctuation">(</span>X_scaled<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>pca<span class="token punctuation">.</span>explained_variance_ratio_<span class="token punctuation">)</span>
+</code></pre>
+        <hr>
+        <h3 id="-day-49-pca--code-implementation-part-3" tabindex="-1"><a class="anchor"
+                name="-day-49-pca--code-implementation-part-3" tabindex="-1"
+                href="#-day-49-pca--code-implementation-part-3"><span class="octicon octicon-link"></span></a>✅
+            <strong>Day 49: PCA – Code Implementation (Part 3)</strong>
+        </h3>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>preprocessing <span class="token keyword">import</span> StandardScaler
+<span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>decomposition <span class="token keyword">import</span> PCA
+
+<span class="token comment"># Standardize</span>
+scaler <span class="token operator">=</span> StandardScaler<span class="token punctuation">(</span><span class="token punctuation">)</span>
+X_scaled <span class="token operator">=</span> scaler<span class="token punctuation">.</span>fit_transform<span class="token punctuation">(</span>X<span class="token punctuation">)</span>
+
+<span class="token comment"># Apply PCA</span>
+pca <span class="token operator">=</span> PCA<span class="token punctuation">(</span>n_components<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">)</span>
+X_pca <span class="token operator">=</span> pca<span class="token punctuation">.</span>fit_transform<span class="token punctuation">(</span>X_scaled<span class="token punctuation">)</span>
+
+<span class="token comment"># Explained Variance</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>pca<span class="token punctuation">.</span>explained_variance_ratio_<span class="token punctuation">)</span>
+</code></pre>
+        <h4 id="-choose-n_components-using" tabindex="-1"><a class="anchor" name="-choose-n_components-using"
+                tabindex="-1" href="#-choose-n_components-using"><span class="octicon octicon-link"></span></a>🔍 Choose
+            <code>n_components</code> using:
+        </h4>
+        <ul>
+            <li>Scree plot (elbow method)</li>
+            <li>Cumulative EVR ≥ 95%</li>
+        </ul>
+        <hr>
+        <h3 id="-day-50-simple-linear-regression-intuition--code" tabindex="-1"><a class="anchor"
+                name="-day-50-simple-linear-regression-intuition--code" tabindex="-1"
+                href="#-day-50-simple-linear-regression-intuition--code"><span class="octicon octicon-link"></span></a>✅
+            <strong>Day 50: Simple Linear Regression (Intuition + Code)</strong>
+        </h3>
+        <h4 id="-goal" tabindex="-1"><a class="anchor" name="-goal" tabindex="-1" href="#-goal"><span
+                    class="octicon octicon-link"></span></a>🎯 Goal:</h4>
+        <p>Find the <strong>best fit line</strong>:</p>
+        <p><strong>Equation of a Line:</strong><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            \( y = mx + c \)</p>
+
+        <p>Where:</p>
+        <ul>
+            <li><code>m</code> is the slope (coefficient)</li>
+            <li><code>c</code> is the intercept</li>
+        </ul>
+        <hr>
+        <h3 id="-learning-objective" tabindex="-1"><a class="anchor" name="-learning-objective" tabindex="-1"
+                href="#-learning-objective"><span class="octicon octicon-link"></span></a>🧠 Learning Objective:</h3>
+        <p>Minimize the difference between actual &amp; predicted values using <strong>loss function</strong> (like MSE)
+        </p>
+        <h4 id="-mean-squared-error-mse" tabindex="-1"><a class="anchor" name="-mean-squared-error-mse" tabindex="-1"
+                href="#-mean-squared-error-mse"><span class="octicon octicon-link"></span></a>📐 Mean Squared Error
+            (MSE):</h4>
+        <p><strong>Mean Squared Error (MSE):</strong><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            \( MSE = \frac{1}{n} \sum (y_i - \hat{y}_i)^2 \)</p>
+
+        <hr>
+        <h3 id="-code-example" tabindex="-1"><a class="anchor" name="-code-example" tabindex="-1"
+                href="#-code-example"><span class="octicon octicon-link"></span></a>🔧 Code Example:</h3>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>linear_model <span class="token keyword">import</span> LinearRegression
+model <span class="token operator">=</span> LinearRegression<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+model<span class="token punctuation">.</span>fit<span class="token punctuation">(</span>X_train<span class="token punctuation">,</span> y_train<span class="token punctuation">)</span>
+y_pred <span class="token operator">=</span> model<span class="token punctuation">.</span>predict<span class="token punctuation">(</span>X_test<span class="token punctuation">)</span>
+
+<span class="token comment"># Coefficients</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>model<span class="token punctuation">.</span>coef_<span class="token punctuation">,</span> model<span class="token punctuation">.</span>intercept_<span class="token punctuation">)</span>
+</code></pre>
+        <hr>
+        <h3 id="-visualization" tabindex="-1"><a class="anchor" name="-visualization" tabindex="-1"
+                href="#-visualization"><span class="octicon octicon-link"></span></a>✅ Visualization:</h3>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
+plt<span class="token punctuation">.</span>scatter<span class="token punctuation">(</span>X<span class="token punctuation">,</span> y<span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>X<span class="token punctuation">,</span> y_pred<span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">'red'</span><span class="token punctuation">)</span>
+</code></pre>
+        <hr>
+        <h3 id="-summary-days-4650" tabindex="-1"><a class="anchor" name="-summary-days-4650" tabindex="-1"
+                href="#-summary-days-4650"><span class="octicon octicon-link"></span></a>🔚 Summary (Days 46–50)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Topic</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>46</td>
+                    <td>Curse of Dimensionality</td>
+                </tr>
+                <tr>
+                    <td>47</td>
+                    <td>PCA – Geometric Intuition</td>
+                </tr>
+                <tr>
+                    <td>48</td>
+                    <td>PCA – Step-by-step Math</td>
+                </tr>
+                <tr>
+                    <td>49</td>
+                    <td>PCA – Sklearn Code</td>
+                </tr>
+                <tr>
+                    <td>50</td>
+                    <td>Simple Linear Regression (Intuition + Code)</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <p>Fantastic! You're now entering the <strong>core math + code zone</strong> of Linear Regression — a key
+            foundation for understanding all machine learning models.</p>
+        <p>Here are your detailed <strong>Bhramastra Notes</strong> for <strong>Day 51 to Day 55</strong> from <em>100
+                Days of Machine Learning</em> by CampusX.</p>
+        <hr>
+        <h2 id="-bhramastra-notes--day-51-to-day-55" tabindex="-1"><a class="anchor"
+                name="-bhramastra-notes--day-51-to-day-55" tabindex="-1"
+                href="#-bhramastra-notes--day-51-to-day-55"><span class="octicon octicon-link"></span></a>🧠 Bhramastra
+            Notes — Day 51 to Day 55</h2>
+        <p>📐 <em>Linear Regression: Math, Geometric Intuition &amp; Code from Scratch</em></p>
+        <hr>
+        <h3 id="-day-51-simple-linear-regression--mathematical-formulation" tabindex="-1"><a class="anchor"
+                name="-day-51-simple-linear-regression--mathematical-formulation" tabindex="-1"
+                href="#-day-51-simple-linear-regression--mathematical-formulation"><span
+                    class="octicon octicon-link"></span></a>✅ <strong>Day 51: Simple Linear Regression – Mathematical
+                Formulation</strong></h3>
+        <h4 id="-goal-1" tabindex="-1"><a class="anchor" name="-goal-1" tabindex="-1" href="#-goal-1"><span
+                    class="octicon octicon-link"></span></a>🎯 Goal:</h4>
+        <p>Predict target <code>y</code> from input feature <code>x</code> using:</p>
+        <p><strong>Predicted Value (Linear Regression):</strong><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            \( \hat{y} = mx + c \)</p>
+
+        <hr>
+        <h3 id="-key-concepts" tabindex="-1"><a class="anchor" name="-key-concepts" tabindex="-1"
+                href="#-key-concepts"><span class="octicon octicon-link"></span></a>✅ <strong>Key Concepts</strong>:
+        </h3>
+        <h4 id="-1-loss-function" tabindex="-1"><a class="anchor" name="-1-loss-function" tabindex="-1"
+                href="#-1-loss-function"><span class="octicon octicon-link"></span></a>📐 1. <strong>Loss
+                Function</strong>:</h4>
+        <ul>
+            <li>Mean Squared Error (MSE)</li>
+        </ul>
+        <p><strong>Mean Squared Error (MSE):</strong><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            \( MSE = \frac{1}{n} \sum (y_i - \hat{y}_i)^2 \)</p>
+
+        <hr>
+        <h4 id="-2-optimization-objective" tabindex="-1"><a class="anchor" name="-2-optimization-objective"
+                tabindex="-1" href="#-2-optimization-objective"><span class="octicon octicon-link"></span></a>📐 2.
+            <strong>Optimization Objective</strong>:
+        </h4>
+        <p>Minimize MSE by finding best <code>m</code> and <code>c</code></p>
+        <h4 id="-3-gradient-descent-introduction" tabindex="-1"><a class="anchor"
+                name="-3-gradient-descent-introduction" tabindex="-1" href="#-3-gradient-descent-introduction"><span
+                    class="octicon octicon-link"></span></a>📐 3. <strong>Gradient Descent</strong> (introduction):</h4>
+        <p>Used to find optimal <code>m</code>, <code>c</code> when dataset is large or no closed-form solution is
+            desired.</p>
+        <hr>
+        <h3 id="-day-52-regression-metrics-mse-mae-rmse-r-score" tabindex="-1"><a class="anchor"
+                name="-day-52-regression-metrics-mse-mae-rmse-r-score" tabindex="-1"
+                href="#-day-52-regression-metrics-mse-mae-rmse-r-score"><span class="octicon octicon-link"></span></a>✅
+            <strong>Day 52: Regression Metrics (MSE, MAE, RMSE, R² Score)</strong>
+        </h3>
+        <h4 id="-1-mean-absolute-error-mae" tabindex="-1"><a class="anchor" name="-1-mean-absolute-error-mae"
+                tabindex="-1" href="#-1-mean-absolute-error-mae"><span class="octicon octicon-link"></span></a>📊 1.
+            Mean Absolute Error (MAE)</h4>
+        <p><strong>Mean Absolute Error (MAE):</strong><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            \( MAE = \frac{1}{n} \sum |y_i - \hat{y}_i| \)</p>
+
+        <ul>
+            <li>Easy to interpret</li>
+            <li>Robust to outliers</li>
+        </ul>
+        <hr>
+        <h4 id="-2-mean-squared-error-mse" tabindex="-1"><a class="anchor" name="-2-mean-squared-error-mse"
+                tabindex="-1" href="#-2-mean-squared-error-mse"><span class="octicon octicon-link"></span></a>📊 2. Mean
+            Squared Error (MSE)</h4>
+        <p><strong>Mean Squared Error (MSE):</strong><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            \( MSE = \frac{1}{n} \sum (y_i - \hat{y}_i)^2 \)</p>
+
+        <ul>
+            <li>Penalizes large errors</li>
+        </ul>
+        <hr>
+        <h4 id="-3-root-mean-squared-error-rmse" tabindex="-1"><a class="anchor" name="-3-root-mean-squared-error-rmse"
+                tabindex="-1" href="#-3-root-mean-squared-error-rmse"><span class="octicon octicon-link"></span></a>📊
+            3. Root Mean Squared Error (RMSE)</h4>
+        <p><strong>Root Mean Squared Error (RMSE):</strong><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            \( RMSE = \sqrt{MSE} \)</p>
+
+        <ul>
+            <li>Same unit as target</li>
+        </ul>
+        <hr>
+        <h4 id="-4-r-score-coefficient-of-determination" tabindex="-1"><a class="anchor"
+                name="-4-r-score-coefficient-of-determination" tabindex="-1"
+                href="#-4-r-score-coefficient-of-determination"><span class="octicon octicon-link"></span></a>📊 4. R²
+            Score (Coefficient of Determination)</h4>
+        <p><strong>R-Squared (Coefficient of Determination):</strong><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            \( R^2 = 1 - \frac{SS_{\text{res}}}{SS_{\text{tot}}} \)</p>
+
+        <ul>
+            <li><strong>0 ≤ R² ≤ 1</strong></li>
+            <li>R² = % of variance explained by the model</li>
+        </ul>
+        <hr>
+        <h3 id="-sklearn-example" tabindex="-1"><a class="anchor" name="-sklearn-example" tabindex="-1"
+                href="#-sklearn-example"><span class="octicon octicon-link"></span></a>🔧 Sklearn Example:</h3>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>metrics <span class="token keyword">import</span> mean_squared_error<span class="token punctuation">,</span> mean_absolute_error<span class="token punctuation">,</span> r2_score
+
+mse <span class="token operator">=</span> mean_squared_error<span class="token punctuation">(</span>y_test<span class="token punctuation">,</span> y_pred<span class="token punctuation">)</span>
+rmse <span class="token operator">=</span> np<span class="token punctuation">.</span>sqrt<span class="token punctuation">(</span>mse<span class="token punctuation">)</span>
+mae <span class="token operator">=</span> mean_absolute_error<span class="token punctuation">(</span>y_test<span class="token punctuation">,</span> y_pred<span class="token punctuation">)</span>
+r2 <span class="token operator">=</span> r2_score<span class="token punctuation">(</span>y_test<span class="token punctuation">,</span> y_pred<span class="token punctuation">)</span>
+</code></pre>
+        <hr>
+        <h3 id="-day-53-multiple-linear-regression--intuition--code" tabindex="-1"><a class="anchor"
+                name="-day-53-multiple-linear-regression--intuition--code" tabindex="-1"
+                href="#-day-53-multiple-linear-regression--intuition--code"><span
+                    class="octicon octicon-link"></span></a>✅ <strong>Day 53: Multiple Linear Regression – Intuition +
+                Code</strong></h3>
+        <h4 id="-formula" tabindex="-1"><a class="anchor" name="-formula" tabindex="-1" href="#-formula"><span
+                    class="octicon octicon-link"></span></a>🎯 Formula:</h4>
+        <p><strong>Multiple Linear Regression Equation:</strong><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            \( \hat{y} = b_0 + b_1x_1 + b_2x_2 + \cdots + b_nx_n \)</p>
+
+        <ul>
+            <li>Each feature has its own coefficient</li>
+            <li>Line becomes a <strong>hyperplane</strong> in higher dimensions</li>
+        </ul>
+        <hr>
+        <h3 id="-real-world" tabindex="-1"><a class="anchor" name="-real-world" tabindex="-1" href="#-real-world"><span
+                    class="octicon octicon-link"></span></a>🧠 Real-World:</h3>
+        <p>Used for predicting price, sales, etc. using multiple variables like area, location, age, etc.</p>
+        <hr>
+        <h3 id="-code-3" tabindex="-1"><a class="anchor" name="-code-3" tabindex="-1" href="#-code-3"><span
+                    class="octicon octicon-link"></span></a>🔧 Code:</h3>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>linear_model <span class="token keyword">import</span> LinearRegression
+
+model <span class="token operator">=</span> LinearRegression<span class="token punctuation">(</span><span class="token punctuation">)</span>
+model<span class="token punctuation">.</span>fit<span class="token punctuation">(</span>X_train<span class="token punctuation">,</span> y_train<span class="token punctuation">)</span>
+model<span class="token punctuation">.</span>predict<span class="token punctuation">(</span>X_test<span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>model<span class="token punctuation">.</span>coef_<span class="token punctuation">,</span> model<span class="token punctuation">.</span>intercept_<span class="token punctuation">)</span>
+</code></pre>
+        <hr>
+        <h3 id="-day-54-multiple-linear-regression--mathematical-formulation" tabindex="-1"><a class="anchor"
+                name="-day-54-multiple-linear-regression--mathematical-formulation" tabindex="-1"
+                href="#-day-54-multiple-linear-regression--mathematical-formulation"><span
+                    class="octicon octicon-link"></span></a>✅ <strong>Day 54: Multiple Linear Regression – Mathematical
+                Formulation</strong></h3>
+        <h4 id="-matrix-form" tabindex="-1"><a class="anchor" name="-matrix-form" tabindex="-1"
+                href="#-matrix-form"><span class="octicon octicon-link"></span></a>📐 Matrix Form:</h4>
+        <p><strong>Linear Model (Matrix Form):</strong><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            \( Y = XW + b \)</p>
+
+        <ul>
+            <li><code>X</code>: Feature matrix (n × m)</li>
+            <li><code>W</code>: Weight vector (m × 1)</li>
+            <li><code>b</code>: Bias (scalar or vector)</li>
+        </ul>
+        <hr>
+        <h4 id="-closed-form-solution-normal-equation" tabindex="-1"><a class="anchor"
+                name="-closed-form-solution-normal-equation" tabindex="-1"
+                href="#-closed-form-solution-normal-equation"><span class="octicon octicon-link"></span></a>🎯
+            Closed-form solution (Normal Equation):</h4>
+        <p><strong>Normal Equation (Closed-form Solution for Linear Regression):</strong><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            \( W = (X^TX)^{-1}X^Ty \)</p>
+
+        <ul>
+            <li>Can be used when <strong>data is small</strong></li>
+            <li>Fails if $X^TX$ is <strong>non-invertible</strong></li>
+        </ul>
+        <hr>
+        <h3 id="-day-55-multiple-linear-regression--code-from-scratch" tabindex="-1"><a class="anchor"
+                name="-day-55-multiple-linear-regression--code-from-scratch" tabindex="-1"
+                href="#-day-55-multiple-linear-regression--code-from-scratch"><span
+                    class="octicon octicon-link"></span></a>✅ <strong>Day 55: Multiple Linear Regression – Code From
+                Scratch</strong></h3>
+        <pre class="language-python" tabindex="0"><code class="language-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+
+<span class="token comment"># Normal Equation</span>
+X_b <span class="token operator">=</span> np<span class="token punctuation">.</span>c_<span class="token punctuation">[</span>np<span class="token punctuation">.</span>ones<span class="token punctuation">(</span><span class="token punctuation">(</span>X<span class="token punctuation">.</span>shape<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> X<span class="token punctuation">]</span>  <span class="token comment"># add bias term</span>
+theta_best <span class="token operator">=</span> np<span class="token punctuation">.</span>linalg<span class="token punctuation">.</span>inv<span class="token punctuation">(</span>X_b<span class="token punctuation">.</span>T<span class="token punctuation">.</span>dot<span class="token punctuation">(</span>X_b<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span>dot<span class="token punctuation">(</span>X_b<span class="token punctuation">.</span>T<span class="token punctuation">)</span><span class="token punctuation">.</span>dot<span class="token punctuation">(</span>y<span class="token punctuation">)</span>
+
+<span class="token comment"># Predict</span>
+X_new_b <span class="token operator">=</span> np<span class="token punctuation">.</span>c_<span class="token punctuation">[</span>np<span class="token punctuation">.</span>ones<span class="token punctuation">(</span><span class="token punctuation">(</span>X_new<span class="token punctuation">.</span>shape<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> X_new<span class="token punctuation">]</span>
+y_pred <span class="token operator">=</span> X_new_b<span class="token punctuation">.</span>dot<span class="token punctuation">(</span>theta_best<span class="token punctuation">)</span>
+</code></pre>
+        <h4 id="-notes" tabindex="-1"><a class="anchor" name="-notes" tabindex="-1" href="#-notes"><span
+                    class="octicon octicon-link"></span></a>📌 Notes:</h4>
+        <ul>
+            <li>Add a <strong>column of 1s</strong> for the intercept</li>
+            <li>Use <code>np.linalg.pinv</code> for large datasets (pseudo-inverse)</li>
+        </ul>
+        <hr>
+        <h3 id="-summary-days-5155" tabindex="-1"><a class="anchor" name="-summary-days-5155" tabindex="-1"
+                href="#-summary-days-5155"><span class="octicon octicon-link"></span></a>🔚 Summary (Days 51–55)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Topic</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>51</td>
+                    <td>Linear Regression: Math Foundation</td>
+                </tr>
+                <tr>
+                    <td>52</td>
+                    <td>Regression Metrics: MSE, MAE, RMSE, R²</td>
+                </tr>
+                <tr>
+                    <td>53</td>
+                    <td>Multiple Linear Regression: Intuition &amp; Code</td>
+                </tr>
+                <tr>
+                    <td>54</td>
+                    <td>MLR: Matrix Form &amp; Normal Equation</td>
+                </tr>
+                <tr>
+                    <td>55</td>
+                    <td>Code from Scratch using NumPy</td>
                 </tr>
             </tbody>
         </table>
